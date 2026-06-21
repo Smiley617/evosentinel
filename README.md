@@ -6,6 +6,7 @@ A multi-agent AI parliament for crypto.
 > Paper simulation. No real funds. Public market data only.
 
 **Live demo:** https://nxdyhdet.mule.page/
+**Repo:** https://github.com/Smiley617/evosentinel
 **Thesis:** [THESIS.md](./THESIS.md)
 
 ---
