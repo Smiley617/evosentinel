@@ -1,0 +1,7357 @@
+[
+  {
+    "ts": "2026-06-21T20:50:24.792Z",
+    "cycle": 1,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 11.03,
+      "atr14": 41.2443,
+      "change24h": -0.17
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5079376109796437,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.19%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 11. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.55,
+        "line": "Volume 144% of average. Mild accumulation."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 11 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.008,
+    "confidence": 0.552,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63765.72
+  },
+  {
+    "ts": "2026-06-21T20:50:24.792Z",
+    "cycle": 1,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 16.03,
+      "atr14": 1.5543,
+      "change24h": -0.52
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5158829351693226,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.22%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 16. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7844661546271378,
+        "line": "Order book -39% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 16 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.26,
+    "confidence": 0.6,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 16 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 1722.206,
+      "tp1": 1715.678,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1720.03
+  },
+  {
+    "ts": "2026-06-21T20:50:24.792Z",
+    "cycle": 1,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 11.43,
+      "atr14": 0.0664,
+      "change24h": 2.18
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5410661354955824,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.30%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 11. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.8081657355698839,
+        "line": "Order book 43% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 11 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.053,
+    "confidence": 0.61,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.48
+  },
+  {
+    "ts": "2026-06-21T20:50:54.875Z",
+    "cycle": 2,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 12,
+      "atr14": 43.4179,
+      "change24h": -0.21
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5078123105786494,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.19%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 12. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.714138741073102,
+        "line": "Order book 27% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 12 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.041,
+    "confidence": 0.584,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63770
+  },
+  {
+    "ts": "2026-06-21T20:50:54.875Z",
+    "cycle": 2,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 12.97,
+      "atr14": 1.5771,
+      "change24h": -0.58
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5167722468698135,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.22%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 13. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7377595148451666,
+        "line": "Order book -31% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 13 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.251,
+    "confidence": 0.591,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 13 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 1721.418,
+      "tp1": 1714.794,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1719.21
+  },
+  {
+    "ts": "2026-06-21T20:50:54.875Z",
+    "cycle": 2,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 3.13,
+      "atr14": 0.0664,
+      "change24h": 2.1
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5425867797758537,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.31%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 3. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7231739432623557,
+        "line": "Order book 29% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 3 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.036,
+    "confidence": 0.593,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.42
+  },
+  {
+    "ts": "2026-06-21T20:51:24.911Z",
+    "cycle": 3,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 5.6,
+      "atr14": 45.79,
+      "change24h": -0.3
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5128696298072217,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.21%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 6. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7306203177443333,
+        "line": "Order book 30% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 6 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.044,
+    "confidence": 0.589,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63724.6
+  },
+  {
+    "ts": "2026-06-21T20:51:24.911Z",
+    "cycle": 3,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 11.81,
+      "atr14": 1.735,
+      "change24h": -0.69
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5234913002661604,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.24%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 12. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 34% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 12 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.105,
+    "confidence": 0.515,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 12 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": null,
+    "lastClose": 1717.61
+  },
+  {
+    "ts": "2026-06-21T20:51:24.911Z",
+    "cycle": 3,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 3.08,
+      "atr14": 0.0707,
+      "change24h": 1.97
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5502880714959484,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.33%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 3. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7484007943363208,
+        "line": "Order book 33% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 3 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.04,
+    "confidence": 0.6,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.39
+  },
+  {
+    "ts": "2026-06-21T20:51:54.926Z",
+    "cycle": 4,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 13.39,
+      "atr14": 46.0914,
+      "change24h": -0.21
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.511461996170599,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.20%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 13. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.82,
+        "line": "Order book 79% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 13 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.062,
+    "confidence": 0.606,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63772.67
+  },
+  {
+    "ts": "2026-06-21T20:51:54.926Z",
+    "cycle": 4,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 15.66,
+      "atr14": 1.7471,
+      "change24h": -0.59
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5215602069981439,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.24%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 16. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7437305804533969,
+        "line": "Order book -32% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 16 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.253,
+    "confidence": 0.593,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 16 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 1721.836,
+      "tp1": 1714.498,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1719.39
+  },
+  {
+    "ts": "2026-06-21T20:51:54.926Z",
+    "cycle": 4,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 17.81,
+      "atr14": 0.0757,
+      "change24h": 2.17
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5467385247562446,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.32%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 18. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.6716074641980041,
+        "line": "Order book 20% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 18 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.025,
+    "confidence": 0.584,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.53
+  },
+  {
+    "ts": "2026-06-21T20:52:24.960Z",
+    "cycle": 5,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 16.22,
+      "atr14": 48.9571,
+      "change24h": -0.26
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5133925433930924,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.21%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 16. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7919624498502985,
+        "line": "Order book -40% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 16 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.261,
+    "confidence": 0.601,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 16 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 63841.73,
+      "tp1": 63636.11,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63773.19
+  },
+  {
+    "ts": "2026-06-21T20:52:24.960Z",
+    "cycle": 5,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 15.56,
+      "atr14": 1.8493,
+      "change24h": -0.7
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5260941023117478,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.25%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 16. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.6644864341098288,
+        "line": "Order book -19% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 16 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.238,
+    "confidence": 0.578,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 16 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 1721.039,
+      "tp1": 1713.272,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1718.45
+  },
+  {
+    "ts": "2026-06-21T20:52:24.960Z",
+    "cycle": 5,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 16.25,
+      "atr14": 0.0814,
+      "change24h": 2.03
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5513983088048297,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.34%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 16. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 40% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 16 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.11,
+    "confidence": 0.52,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 16 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": null,
+    "lastClose": 73.47
+  },
+  {
+    "ts": "2026-06-21T20:52:54.995Z",
+    "cycle": 6,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 16.09,
+      "atr14": 49.4607,
+      "change24h": -0.24
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5134888983057442,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.21%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 16. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.6709927393838561,
+        "line": "Order book 20% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 16 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.032,
+    "confidence": 0.577,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63769.9
+  },
+  {
+    "ts": "2026-06-21T20:52:54.995Z",
+    "cycle": 6,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 16.47,
+      "atr14": 1.8493,
+      "change24h": -0.67
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5252151454061756,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.25%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 16. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.55,
+        "line": "Volume 83% of average. Mild distribution."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 16 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.215,
+    "confidence": 0.555,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 16 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 1721.849,
+      "tp1": 1714.082,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1719.26
+  },
+  {
+    "ts": "2026-06-21T20:52:54.995Z",
+    "cycle": 6,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 16.88,
+      "atr14": 0.0814,
+      "change24h": 2.07
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5506375037495849,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.34%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 17. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.6470789924557221,
+        "line": "Order book 16% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 17 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.019,
+    "confidence": 0.58,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.5
+  },
+  {
+    "ts": "2026-06-21T20:53:25.029Z",
+    "cycle": 7,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 18.47,
+      "atr14": 48.5643,
+      "change24h": -0.24
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5156180992553356,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.22%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 18. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -62% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 18 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.267,
+    "confidence": 0.607,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 18 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 63838.9,
+      "tp1": 63634.93,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63770.91
+  },
+  {
+    "ts": "2026-06-21T20:53:25.029Z",
+    "cycle": 7,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 19.68,
+      "atr14": 1.8064,
+      "change24h": -0.66
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5293704903824448,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.26%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 20. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.6853740538670839,
+        "line": "Order book -23% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 20 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.243,
+    "confidence": 0.583,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 20 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 1721.549,
+      "tp1": 1713.962,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1719.02
+  },
+  {
+    "ts": "2026-06-21T20:53:25.029Z",
+    "cycle": 7,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 17.57,
+      "atr14": 0.0786,
+      "change24h": 2.08
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.555404506865142,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.35%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 18. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 11% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 18 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.111,
+    "confidence": 0.521,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 18 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": null,
+    "lastClose": 73.47
+  },
+  {
+    "ts": "2026-06-21T20:53:55.044Z",
+    "cycle": 8,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 21.58,
+      "atr14": 49.0986,
+      "change24h": -0.21
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5151643629157894,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.22%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 22. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.82,
+        "line": "Order book 66% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 22 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.061,
+    "confidence": 0.607,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63786.4
+  },
+  {
+    "ts": "2026-06-21T20:53:55.044Z",
+    "cycle": 8,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 18.61,
+      "atr14": 1.8086,
+      "change24h": -0.67
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5295658645139346,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.27%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 19. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 37% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 19 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.106,
+    "confidence": 0.516,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 19 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": null,
+    "lastClose": 1718.84
+  },
+  {
+    "ts": "2026-06-21T20:53:55.044Z",
+    "cycle": 8,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 16.88,
+      "atr14": 0.08,
+      "change24h": 2.04
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5561655655707762,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.35%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 17. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7022037118942683,
+        "line": "Order book 25% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 17 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.029,
+    "confidence": 0.592,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.44
+  },
+  {
+    "ts": "2026-06-21T20:54:25.079Z",
+    "cycle": 9,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 27.02,
+      "atr14": 50.1121,
+      "change24h": -0.15
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5151716725336852,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.22%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 27. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.82,
+        "line": "Order book 58% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 27 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.103,
+    "confidence": 0.631,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63812.04
+  },
+  {
+    "ts": "2026-06-21T20:54:25.079Z",
+    "cycle": 9,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 22.95,
+      "atr14": 1.8679,
+      "change24h": -0.63
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5306511193545698,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.27%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 23. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7426758535403757,
+        "line": "Order book -32% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 23 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.255,
+    "confidence": 0.595,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 23 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 1722.535,
+      "tp1": 1714.69,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1719.92
+  },
+  {
+    "ts": "2026-06-21T20:54:25.079Z",
+    "cycle": 9,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 23.46,
+      "atr14": 0.0836,
+      "change24h": 2.15
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5574678757993146,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.36%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 23. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 42% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 23 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.111,
+    "confidence": 0.521,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 23 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": null,
+    "lastClose": 73.52
+  },
+  {
+    "ts": "2026-06-21T20:54:55.115Z",
+    "cycle": 10,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 32.38,
+      "atr14": 53.0214,
+      "change24h": -0.12
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5141958678311217,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.21%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 32. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.55,
+        "line": "Volume 60% of average. Mild accumulation."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 32 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.157,
+    "confidence": 0.577,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63845.35
+  },
+  {
+    "ts": "2026-06-21T20:54:55.115Z",
+    "cycle": 10,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 25.86,
+      "atr14": 1.9614,
+      "change24h": -0.6
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5300431905687758,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.27%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 26. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.55,
+        "line": "Volume 90% of average. Mild accumulation."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 26 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.16,
+    "confidence": 0.58,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 1720.48
+  },
+  {
+    "ts": "2026-06-21T20:54:55.115Z",
+    "cycle": 10,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 24.39,
+      "atr14": 0.0864,
+      "change24h": 2.17
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5572141307119979,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.36%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 24. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.6440285155672295,
+        "line": "Order book -16% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 24 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.24,
+    "confidence": 0.58,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 24 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 73.651,
+      "tp1": 73.288,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.53
+  },
+  {
+    "ts": "2026-06-21T20:55:25.151Z",
+    "cycle": 11,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 35.63,
+      "atr14": 51.4571,
+      "change24h": -0.13
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5135849643310709,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.21%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 36. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7436304488081821,
+        "line": "Order book 32% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 36 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.118,
+    "confidence": 0.615,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63845
+  },
+  {
+    "ts": "2026-06-21T20:55:25.151Z",
+    "cycle": 11,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 29.4,
+      "atr14": 1.92,
+      "change24h": -0.59
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5304506241512258,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.27%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 29. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 16% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 29 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.27,
+    "confidence": 0.54,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1723.528,
+      "tp1": 1715.464,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1720.84,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 2,
+      "ledger_jsonl_before": 3,
+      "ledger_jsonl_after": 4,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:55:25.151Z",
+    "cycle": 11,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 28.05,
+      "atr14": 0.0843,
+      "change24h": 2.17
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5570515910830816,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.36%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 28. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 34% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 28 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.275,
+    "confidence": 0.545,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 73.678,
+      "tp1": 73.324,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.56,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 3,
+      "ledger_jsonl_before": 4,
+      "ledger_jsonl_after": 5,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:55:55.198Z",
+    "cycle": 12,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 35.22,
+      "atr14": 51.4571,
+      "change24h": -0.12
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5136596708747095,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.21%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 35. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.750175113115814,
+        "line": "Order book 33% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 35 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.117,
+    "confidence": 0.617,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63842.45
+  },
+  {
+    "ts": "2026-06-21T20:55:55.198Z",
+    "cycle": 12,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 30.52,
+      "atr14": 1.92,
+      "change24h": -0.58
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5302009064239289,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.27%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 31. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 39% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 31 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.27,
+    "confidence": 0.54,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1723.758,
+      "tp1": 1715.694,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1721.07,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 4,
+      "ledger_jsonl_before": 5,
+      "ledger_jsonl_after": 6,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:55:55.198Z",
+    "cycle": 12,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 26.51,
+      "atr14": 0.0857,
+      "change24h": 2.13
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5578129647013295,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.36%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 27. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.6695468202593684,
+        "line": "Order book -20% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 27 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.409,
+    "confidence": 0.609,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 73.65,
+      "tp1": 73.29,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.53,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 5,
+      "ledger_jsonl_before": 6,
+      "ledger_jsonl_after": 7,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:56:25.241Z",
+    "cycle": 13,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 31.22,
+      "atr14": 51.2293,
+      "change24h": -0.15
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5135066740999525,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.21%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 31. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 5% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 31 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.267,
+    "confidence": 0.537,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63897.731,
+      "tp1": 63682.568,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63826.01,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 6,
+      "ledger_jsonl_before": 7,
+      "ledger_jsonl_after": 8,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:56:25.241Z",
+    "cycle": 13,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 26.62,
+      "atr14": 1.8836,
+      "change24h": -0.57
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5303460027381213,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.27%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 27. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 39% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 27 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.27,
+    "confidence": 0.54,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1723.627,
+      "tp1": 1715.716,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1720.99,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 7,
+      "ledger_jsonl_before": 8,
+      "ledger_jsonl_after": 9,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:56:25.241Z",
+    "cycle": 13,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 26.51,
+      "atr14": 0.0857,
+      "change24h": 2.14
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5587149182185013,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.36%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 27. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 3% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 27 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.276,
+    "confidence": 0.546,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 73.64,
+      "tp1": 73.28,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.52,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 8,
+      "ledger_jsonl_before": 9,
+      "ledger_jsonl_after": 10,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:56:55.285Z",
+    "cycle": 14,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 28.67,
+      "atr14": 53.8007,
+      "change24h": -0.21
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5145617739961517,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.22%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 29. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.8086722866507356,
+        "line": "Order book -43% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 29 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.429,
+    "confidence": 0.629,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63865.321,
+      "tp1": 63639.358,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63790,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 9,
+      "ledger_jsonl_before": 10,
+      "ledger_jsonl_after": 11,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:56:55.285Z",
+    "cycle": 14,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 25.19,
+      "atr14": 1.9371,
+      "change24h": -0.61
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5311495598466198,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.27%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 25. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.55,
+        "line": "Volume 72% of average. Mild distribution."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 25 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.38,
+    "confidence": 0.58,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1722.962,
+      "tp1": 1714.826,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1720.25,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 10,
+      "ledger_jsonl_before": 11,
+      "ledger_jsonl_after": 12,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:56:55.285Z",
+    "cycle": 14,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 25.29,
+      "atr14": 0.0886,
+      "change24h": 2.08
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5597303288432617,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.37%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 25. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 21% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 25 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.276,
+    "confidence": 0.546,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 73.604,
+      "tp1": 73.232,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.48,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 11,
+      "ledger_jsonl_before": 12,
+      "ledger_jsonl_after": 13,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:57:25.328Z",
+    "cycle": 15,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 26.86,
+      "atr14": 53.3721,
+      "change24h": -0.25
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5157343170066099,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.22%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 27. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -76% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 27 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.431,
+    "confidence": 0.631,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63840.121,
+      "tp1": 63615.958,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63765.4,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 12,
+      "ledger_jsonl_before": 13,
+      "ledger_jsonl_after": 14,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:57:25.328Z",
+    "cycle": 15,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 23.12,
+      "atr14": 1.9436,
+      "change24h": -0.69
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5327011548340316,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.28%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 23. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 56% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 23 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.107,
+    "confidence": 0.517,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 23 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": null,
+    "lastClose": 1719.29
+  },
+  {
+    "ts": "2026-06-21T20:57:25.328Z",
+    "cycle": 15,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 23.4,
+      "atr14": 0.0914,
+      "change24h": 1.96
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5628446419129013,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.38%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 23. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7056298043562508,
+        "line": "Order book 26% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 23 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.029,
+    "confidence": 0.594,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.41
+  },
+  {
+    "ts": "2026-06-21T20:57:55.366Z",
+    "cycle": 16,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 27.01,
+      "atr14": 53.4007,
+      "change24h": -0.25
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.515661054547218,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.22%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 27. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -56% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 27 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.431,
+    "confidence": 0.631,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63842.661,
+      "tp1": 63618.378,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63767.9,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 13,
+      "ledger_jsonl_before": 14,
+      "ledger_jsonl_after": 15,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:57:55.366Z",
+    "cycle": 16,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 23.01,
+      "atr14": 1.9436,
+      "change24h": -0.69
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5327771822978309,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.28%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 23. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7244165741441867,
+        "line": "Order book 29% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 23 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.038,
+    "confidence": 0.591,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 1719.22
+  },
+  {
+    "ts": "2026-06-21T20:57:55.366Z",
+    "cycle": 16,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 22.68,
+      "atr14": 0.0964,
+      "change24h": 1.92
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5636064456067917,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.38%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 23. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7583083642009277,
+        "line": "Last bar: net selling. Volume 208% of average. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 23 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.264,
+    "confidence": 0.604,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 23 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 73.515,
+      "tp1": 73.11,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.38
+  },
+  {
+    "ts": "2026-06-21T20:58:25.387Z",
+    "cycle": 17,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 27.89,
+      "atr14": 53.1886,
+      "change24h": -0.22
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5156812893323727,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.22%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 28. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.82,
+        "line": "Order book 51% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 28 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.103,
+    "confidence": 0.631,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63780.52
+  },
+  {
+    "ts": "2026-06-21T20:58:25.387Z",
+    "cycle": 17,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 25.02,
+      "atr14": 1.9464,
+      "change24h": -0.63
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5329651086818392,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.28%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 25. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7138725483598132,
+        "line": "Order book 27% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 25 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.128,
+    "confidence": 0.613,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 1720.13
+  },
+  {
+    "ts": "2026-06-21T20:58:25.387Z",
+    "cycle": 17,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 23.4,
+      "atr14": 0.095,
+      "change24h": 1.87
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5664524985709213,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.39%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 23. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 22% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 23 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.113,
+    "confidence": 0.523,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 23 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": null,
+    "lastClose": 73.38
+  },
+  {
+    "ts": "2026-06-21T20:58:55.404Z",
+    "cycle": 18,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 32.92,
+      "atr14": 55.7164,
+      "change24h": -0.16
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5146707642639297,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.22%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 33. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 59% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 33 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.267,
+    "confidence": 0.537,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63893.003,
+      "tp1": 63658.994,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63815,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 14,
+      "ledger_jsonl_before": 15,
+      "ledger_jsonl_after": 16,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:58:55.404Z",
+    "cycle": 18,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 28.73,
+      "atr14": 2.0043,
+      "change24h": -0.58
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5320743884661393,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.27%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 29. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7368448125175977,
+        "line": "Order book 31% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 29 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.123,
+    "confidence": 0.618,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 1720.95
+  },
+  {
+    "ts": "2026-06-21T20:58:55.404Z",
+    "cycle": 18,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 26.04,
+      "atr14": 0.0964,
+      "change24h": 1.93
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5654364734154298,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.38%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 26. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.55,
+        "line": "Volume 72% of average. Mild accumulation."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 26 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.167,
+    "confidence": 0.587,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.42
+  },
+  {
+    "ts": "2026-06-21T20:59:25.423Z",
+    "cycle": 19,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 36.99,
+      "atr14": 56.8464,
+      "change24h": -0.14
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5126879828458575,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.21%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 37. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 38% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 37 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.267,
+    "confidence": 0.537,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63921.275,
+      "tp1": 63682.52,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63841.69,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 15,
+      "ledger_jsonl_before": 17,
+      "ledger_jsonl_after": 18,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:59:25.423Z",
+    "cycle": 19,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 31.08,
+      "atr14": 2.0821,
+      "change24h": -0.54
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5302145684447763,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.27%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 31. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 37% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 31 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.27,
+    "confidence": 0.54,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1724.345,
+      "tp1": 1715.6,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1721.43,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 16,
+      "ledger_jsonl_before": 18,
+      "ledger_jsonl_after": 19,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:59:25.423Z",
+    "cycle": 19,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 29.17,
+      "atr14": 0.0979,
+      "change24h": 1.99
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5658928016735397,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.39%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 29. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 8% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 29 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.277,
+    "confidence": 0.547,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 73.587,
+      "tp1": 73.176,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.45,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 17,
+      "ledger_jsonl_before": 19,
+      "ledger_jsonl_after": 20,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:59:55.466Z",
+    "cycle": 20,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 35.77,
+      "atr14": 57.0207,
+      "change24h": -0.15
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.51300128847194,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.21%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 36. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -51% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 36 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.431,
+    "confidence": 0.631,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63910.829,
+      "tp1": 63671.342,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63831,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 18,
+      "ledger_jsonl_before": 20,
+      "ledger_jsonl_after": 21,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:59:55.466Z",
+    "cycle": 20,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 29.96,
+      "atr14": 2.1136,
+      "change24h": -0.57
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5308554944149474,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.27%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 30. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7487186405056742,
+        "line": "Order book -33% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 30 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.42,
+    "confidence": 0.62,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1723.799,
+      "tp1": 1714.922,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1720.84,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 19,
+      "ledger_jsonl_before": 21,
+      "ledger_jsonl_after": 22,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T20:59:55.466Z",
+    "cycle": 20,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 28.42,
+      "atr14": 0.0979,
+      "change24h": 1.97
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5661468573853771,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.39%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 28. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 14% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 28 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.277,
+    "confidence": 0.547,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 73.577,
+      "tp1": 73.166,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.44,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 20,
+      "ledger_jsonl_before": 22,
+      "ledger_jsonl_after": 23,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:00:25.511Z",
+    "cycle": 21,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 42.16,
+      "atr14": 54.73,
+      "change24h": -0.14
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5109857055711727,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.20%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 42. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.82,
+        "line": "Order book 60% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 42 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.102,
+    "confidence": 0.63,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63842.84
+  },
+  {
+    "ts": "2026-06-21T21:00:25.511Z",
+    "cycle": 21,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 37.27,
+      "atr14": 1.9286,
+      "change24h": -0.56
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5294559260721582,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.26%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 37. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7740881451425607,
+        "line": "Order book -37% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 37 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.425,
+    "confidence": 0.625,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1723.91,
+      "tp1": 1715.81,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1721.21,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 21,
+      "ledger_jsonl_before": 24,
+      "ledger_jsonl_after": 25,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:00:25.511Z",
+    "cycle": 21,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 29.67,
+      "atr14": 0.0957,
+      "change24h": 1.94
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5673721482261277,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.39%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 30. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 30% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 30 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.277,
+    "confidence": 0.547,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 73.544,
+      "tp1": 73.142,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.41,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 22,
+      "ledger_jsonl_before": 25,
+      "ledger_jsonl_after": 26,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:00:55.553Z",
+    "cycle": 22,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 44.99,
+      "atr14": 56.4593,
+      "change24h": -0.11
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5102664605970602,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.20%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 45. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -70% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.266,
+    "confidence": 0.566,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63946.423,
+      "tp1": 63709.294,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63867.38,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 23,
+      "ledger_jsonl_before": 27,
+      "ledger_jsonl_after": 28,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:00:55.553Z",
+    "cycle": 22,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 39.54,
+      "atr14": 1.9936,
+      "change24h": -0.54
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5288584019666038,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.26%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 40. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.55,
+        "line": "Volume 107% of average. Mild accumulation."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 40 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.16,
+    "confidence": 0.58,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 1721.76
+  },
+  {
+    "ts": "2026-06-21T21:00:55.553Z",
+    "cycle": 22,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 30.68,
+      "atr14": 0.0971,
+      "change24h": 1.99
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5666098069355184,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.39%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 31. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.55,
+        "line": "Volume 70% of average. Mild accumulation."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 31 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.167,
+    "confidence": 0.587,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.44
+  },
+  {
+    "ts": "2026-06-21T21:01:25.592Z",
+    "cycle": 23,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 59.32,
+      "atr14": 47.945,
+      "change24h": -0.17
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5090179122993812,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.20%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 59. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.6865674485807899,
+        "line": "Order book -23% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.239,
+    "confidence": 0.539,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63912.123,
+      "tp1": 63710.754,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63845,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 24,
+      "ledger_jsonl_before": 28,
+      "ledger_jsonl_after": 29,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:01:25.592Z",
+    "cycle": 23,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 44.39,
+      "atr14": 1.7986,
+      "change24h": -0.59
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.528355546951432,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.26%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 44. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 2% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 44 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.27,
+    "confidence": 0.54,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1723.458,
+      "tp1": 1715.904,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1720.94,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 25,
+      "ledger_jsonl_before": 29,
+      "ledger_jsonl_after": 30,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:01:25.592Z",
+    "cycle": 23,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 38.03,
+      "atr14": 0.085,
+      "change24h": 1.94
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5665936199493636,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.39%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 38. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 9% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 38 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.277,
+    "confidence": 0.547,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 73.559,
+      "tp1": 73.202,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.44,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 26,
+      "ledger_jsonl_before": 30,
+      "ledger_jsonl_after": 31,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:01:55.636Z",
+    "cycle": 24,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 58.86,
+      "atr14": 48.1343,
+      "change24h": -0.17
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5090955851721494,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.20%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 59. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -60% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.266,
+    "confidence": 0.566,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63909.738,
+      "tp1": 63707.574,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63842.35,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 27,
+      "ledger_jsonl_before": 31,
+      "ledger_jsonl_after": 32,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:01:55.636Z",
+    "cycle": 24,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 44.76,
+      "atr14": 1.7986,
+      "change24h": -0.59
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5282468947981096,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.26%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 45. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7780384960686069,
+        "line": "Order book -38% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 45 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.425,
+    "confidence": 0.625,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1723.558,
+      "tp1": 1716.004,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1721.04,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 28,
+      "ledger_jsonl_before": 32,
+      "ledger_jsonl_after": 33,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:01:55.636Z",
+    "cycle": 24,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 38.03,
+      "atr14": 0.0857,
+      "change24h": 1.93
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5665936199493636,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.39%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 38. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 11% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 38 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.277,
+    "confidence": 0.547,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 73.56,
+      "tp1": 73.2,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.44,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 29,
+      "ledger_jsonl_before": 33,
+      "ledger_jsonl_after": 34,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:02:25.685Z",
+    "cycle": 25,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 62.48,
+      "atr14": 40.6743,
+      "change24h": -0.19
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5082955375468925,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.19%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 62. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.6847593703331136,
+        "line": "Order book 22% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.035,
+    "confidence": 0.539,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63828.77
+  },
+  {
+    "ts": "2026-06-21T21:02:25.685Z",
+    "cycle": 25,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 55.31,
+      "atr14": 1.5257,
+      "change24h": -0.61
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5276558801706825,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.26%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 55. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7075072943719872,
+        "line": "Order book 26% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.036,
+    "confidence": 0.547,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 1720.7
+  },
+  {
+    "ts": "2026-06-21T21:02:25.685Z",
+    "cycle": 25,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 38.03,
+      "atr14": 0.0807,
+      "change24h": 1.86
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5681703797352797,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.39%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 38. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 16% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 38 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.278,
+    "confidence": 0.548,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 73.513,
+      "tp1": 73.174,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.4,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 30,
+      "ledger_jsonl_before": 34,
+      "ledger_jsonl_after": 35,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:02:55.727Z",
+    "cycle": 26,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 63.87,
+      "atr14": 41.3657,
+      "change24h": -0.18
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5080226376863086,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.19%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 64. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7868023092344978,
+        "line": "Order book 39% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.056,
+    "confidence": 0.559,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63838.08
+  },
+  {
+    "ts": "2026-06-21T21:02:55.727Z",
+    "cycle": 26,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 58.43,
+      "atr14": 1.58,
+      "change24h": -0.58
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5268409087573676,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.26%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 58. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.6674766570373316,
+        "line": "Order book 20% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.028,
+    "confidence": 0.539,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 1721.45
+  },
+  {
+    "ts": "2026-06-21T21:02:55.727Z",
+    "cycle": 26,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 36.49,
+      "atr14": 0.0821,
+      "change24h": 1.82
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5689330639355947,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.40%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 36. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 50% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 36 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.278,
+    "confidence": 0.548,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 73.485,
+      "tp1": 73.14,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.37,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 31,
+      "ledger_jsonl_before": 35,
+      "ledger_jsonl_after": 36,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:03:25.771Z",
+    "cycle": 27,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 62.25,
+      "atr14": 37.4721,
+      "change24h": -0.2
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5076161234093687,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.19%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 62. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -50% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.266,
+    "confidence": 0.566,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63871.061,
+      "tp1": 63713.678,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63818.6,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 32,
+      "ledger_jsonl_before": 36,
+      "ledger_jsonl_after": 37,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:03:25.771Z",
+    "cycle": 27,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 58.28,
+      "atr14": 1.3993,
+      "change24h": -0.57
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5255948172048981,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.25%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 58. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 31% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.105,
+    "confidence": 0.475,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 1721.41
+  },
+  {
+    "ts": "2026-06-21T21:03:25.771Z",
+    "cycle": 27,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 45.76,
+      "atr14": 0.0707,
+      "change24h": 1.83
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5702803650089082,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.40%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 46. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7068772659843292,
+        "line": "Order book 26% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 46 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.137,
+    "confidence": 0.619,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.36
+  },
+  {
+    "ts": "2026-06-21T21:03:55.798Z",
+    "cycle": 28,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 65.15,
+      "atr14": 38.5671,
+      "change24h": -0.17
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5069887930408734,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.19%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 65. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.8195409094998576,
+        "line": "Order book -45% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.265,
+    "confidence": 0.565,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63893.994,
+      "tp1": 63732.012,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63840,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 33,
+      "ledger_jsonl_before": 37,
+      "ledger_jsonl_after": 38,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:03:55.798Z",
+    "cycle": 28,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 60.39,
+      "atr14": 1.44,
+      "change24h": -0.52
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5249754019687191,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.25%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 60. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.6525169185971597,
+        "line": "Order book 17% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.026,
+    "confidence": 0.535,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 1721.98
+  },
+  {
+    "ts": "2026-06-21T21:03:55.798Z",
+    "cycle": 28,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 50,
+      "atr14": 0.075,
+      "change24h": 1.9
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5690089278977163,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.40%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 50. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.6973191267817942,
+        "line": "Order book 25% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.026,
+    "confidence": 0.553,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.41
+  },
+  {
+    "ts": "2026-06-21T21:04:25.828Z",
+    "cycle": 29,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 64.8,
+      "atr14": 34.3436,
+      "change24h": -0.16
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5055824146996148,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.19%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 65. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7534257877104287,
+        "line": "Order book 34% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.05,
+    "confidence": 0.552,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 63840
+  },
+  {
+    "ts": "2026-06-21T21:04:25.828Z",
+    "cycle": 29,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 65.55,
+      "atr14": 1.3557,
+      "change24h": -0.52
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5219001435481136,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.24%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 66. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7323176185368122,
+        "line": "Order book -30% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.251,
+    "confidence": 0.551,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1724.348,
+      "tp1": 1718.654,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1722.45,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 34,
+      "ledger_jsonl_before": 38,
+      "ledger_jsonl_after": 39,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:04:25.828Z",
+    "cycle": 29,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 51.52,
+      "atr14": 0.0714,
+      "change24h": 1.89
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5677697515875674,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.39%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 52. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 11% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.114,
+    "confidence": 0.484,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.44
+  },
+  {
+    "ts": "2026-06-21T21:04:55.848Z",
+    "cycle": 30,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 61.96,
+      "atr14": 35.4143,
+      "change24h": -0.18
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5060221501522182,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.19%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 62. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -46% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.265,
+    "confidence": 0.565,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63874.58,
+      "tp1": 63725.84,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63825,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 35,
+      "ledger_jsonl_before": 39,
+      "ledger_jsonl_after": 40,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:04:55.848Z",
+    "cycle": 30,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 62.99,
+      "atr14": 1.3764,
+      "change24h": -0.55
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5224978334555117,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.24%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 63. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 14% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.104,
+    "confidence": 0.474,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 1721.9
+  },
+  {
+    "ts": "2026-06-21T21:04:55.848Z",
+    "cycle": 30,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 48.44,
+      "atr14": 0.0736,
+      "change24h": 1.83
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5687870487921485,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.40%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 48. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 35% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 48 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.278,
+    "confidence": 0.548,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 73.503,
+      "tp1": 73.194,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 73.4,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 36,
+      "ledger_jsonl_before": 40,
+      "ledger_jsonl_after": 41,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:05:25.893Z",
+    "cycle": 31,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 53.36,
+      "atr14": 31.545,
+      "change24h": -0.21
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5054339678276053,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.18%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 53. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -85% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.265,
+    "confidence": 0.565,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Stop-too-tight",
+        "text": "ATR < 5 bps of price. The stop would be inside the spread. Refuse."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 63853.133,
+      "tp1": 63720.644,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63808.97
+  },
+  {
+    "ts": "2026-06-21T21:05:25.893Z",
+    "cycle": 31,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 55.89,
+      "atr14": 1.2971,
+      "change24h": -0.6
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5212765218185745,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.24%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 56. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 0,
+        "conf": 0.35,
+        "line": "Volume 51% of average, book balanced. No signal."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.104,
+    "confidence": 0.474,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 1721.01
+  },
+  {
+    "ts": "2026-06-21T21:05:25.893Z",
+    "cycle": 31,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 32.2,
+      "atr14": 0.07,
+      "change24h": 1.73
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5698717768565016,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.40%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 32. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.6583929431623424,
+        "line": "Order book 18% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 32 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.146,
+    "confidence": 0.61,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.33
+  },
+  {
+    "ts": "2026-06-21T21:05:55.933Z",
+    "cycle": 32,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 53.15,
+      "atr14": 31.545,
+      "change24h": -0.2
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5054703222506571,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.18%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 53. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7854790121754203,
+        "line": "Order book -39% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.258,
+    "confidence": 0.558,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Stop-too-tight",
+        "text": "ATR < 5 bps of price. The stop would be inside the spread. Refuse."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 63851.893,
+      "tp1": 63719.404,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63807.73
+  },
+  {
+    "ts": "2026-06-21T21:05:55.933Z",
+    "cycle": 32,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 57.09,
+      "atr14": 1.2971,
+      "change24h": -0.59
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5210156897607217,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.24%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 57. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.55,
+        "line": "Volume 71% of average. Mild distribution."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.214,
+    "confidence": 0.514,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1723.066,
+      "tp1": 1717.618,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1721.25,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 37,
+      "ledger_jsonl_before": 42,
+      "ledger_jsonl_after": 43,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:05:55.933Z",
+    "cycle": 32,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 33.93,
+      "atr14": 0.07,
+      "change24h": 1.78
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5691086193245256,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.40%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 34. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7272406233979676,
+        "line": "Order book 30% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 34 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.132,
+    "confidence": 0.623,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.36
+  },
+  {
+    "ts": "2026-06-21T21:06:25.979Z",
+    "cycle": 33,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 58.74,
+      "atr14": 29.2371,
+      "change24h": -0.18
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5045207401270136,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.18%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 59. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7993585012793061,
+        "line": "Order book 42% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.059,
+    "confidence": 0.561,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Stop-too-tight",
+        "text": "ATR < 5 bps of price. The stop would be inside the spread. Refuse."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": null,
+    "lastClose": 63813.1
+  },
+  {
+    "ts": "2026-06-21T21:06:25.979Z",
+    "cycle": 33,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 60.49,
+      "atr14": 1.1929,
+      "change24h": -0.6
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5203420061411062,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.23%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 60. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7128836478646772,
+        "line": "Order book -27% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.247,
+    "confidence": 0.547,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1722.49,
+      "tp1": 1717.48,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1720.82,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 38,
+      "ledger_jsonl_before": 43,
+      "ledger_jsonl_after": 44,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:06:25.979Z",
+    "cycle": 33,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 35.19,
+      "atr14": 0.0657,
+      "change24h": 1.72
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5714350512566273,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.40%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 35. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7973575389964589,
+        "line": "Order book 41% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 35 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.119,
+    "confidence": 0.638,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.31
+  },
+  {
+    "ts": "2026-06-21T21:06:56.020Z",
+    "cycle": 34,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 54.5,
+      "atr14": 30.8157,
+      "change24h": -0.22
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5051687158570036,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.18%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 55. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -45% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.265,
+    "confidence": 0.565,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Stop-too-tight",
+        "text": "ATR < 5 bps of price. The stop would be inside the spread. Refuse."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 63834.142,
+      "tp1": 63704.716,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63791
+  },
+  {
+    "ts": "2026-06-21T21:06:56.020Z",
+    "cycle": 34,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 56.84,
+      "atr14": 1.2471,
+      "change24h": -0.65
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.521081107521041,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.24%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 57. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -47% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.268,
+    "confidence": 0.568,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1721.886,
+      "tp1": 1716.648,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1720.14,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 39,
+      "ledger_jsonl_before": 45,
+      "ledger_jsonl_after": 46,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:06:56.020Z",
+    "cycle": 34,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 33.93,
+      "atr14": 0.0664,
+      "change24h": 1.69
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5719439640072977,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.41%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 34. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7990294998749067,
+        "line": "Order book 42% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 34 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.119,
+    "confidence": 0.638,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.29
+  },
+  {
+    "ts": "2026-06-21T21:07:26.052Z",
+    "cycle": 35,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 49.55,
+      "atr14": 29.4293,
+      "change24h": -0.22
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5047763241753533,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.18%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 50. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7030314686668857,
+        "line": "Order book 26% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 50 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.124,
+    "confidence": 0.606,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Stop-too-tight",
+        "text": "ATR < 5 bps of price. The stop would be inside the spread. Refuse."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": null,
+    "lastClose": 63794.8
+  },
+  {
+    "ts": "2026-06-21T21:07:26.052Z",
+    "cycle": 35,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 51.67,
+      "atr14": 1.2393,
+      "change24h": -0.64
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5211140805494504,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.24%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 52. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7081876919935324,
+        "line": "Order book -26% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Chart fine, edge thin. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.246,
+    "confidence": 0.546,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1721.635,
+      "tp1": 1716.43,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1719.9,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 40,
+      "ledger_jsonl_before": 47,
+      "ledger_jsonl_after": 48,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:07:26.052Z",
+    "cycle": 35,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 37.29,
+      "atr14": 0.0679,
+      "change24h": 1.71
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5727095569274295,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.41%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 37. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.7152480413377392,
+        "line": "Order book 28% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 37 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.135,
+    "confidence": 0.622,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.31
+  },
+  {
+    "ts": "2026-06-21T21:07:56.097Z",
+    "cycle": 36,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 47.79,
+      "atr14": 30.6357,
+      "change24h": -0.22
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5050636891961227,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.18%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 48. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.55,
+        "line": "Volume 78% of average. Mild distribution."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 48 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.375,
+    "confidence": 0.575,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [
+      {
+        "code": "Stop-too-tight",
+        "text": "ATR < 5 bps of price. The stop would be inside the spread. Refuse."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 63827.89,
+      "tp1": 63699.22,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63785
+  },
+  {
+    "ts": "2026-06-21T21:07:56.097Z",
+    "cycle": 36,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 49.45,
+      "atr14": 1.2829,
+      "change24h": -0.65
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5216358735637321,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.24%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 49. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.684109415737776,
+        "line": "Order book -22% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 49 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.405,
+    "confidence": 0.605,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1721.216,
+      "tp1": 1715.828,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1719.42,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 41,
+      "ledger_jsonl_before": 48,
+      "ledger_jsonl_after": 49,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:07:56.097Z",
+    "cycle": 36,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 33.93,
+      "atr14": 0.0679,
+      "change24h": 1.67
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5734731163079645,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.41%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 34. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.8143160081692875,
+        "line": "Order book 44% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 34 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.116,
+    "confidence": 0.642,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.28
+  },
+  {
+    "ts": "2026-06-21T21:08:26.122Z",
+    "cycle": 37,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 38.87,
+      "atr14": 27.2086,
+      "change24h": -0.23
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.504526713579123,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.18%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 39. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.6535788076745018,
+        "line": "Order book 17% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 39 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.134,
+    "confidence": 0.596,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Stop-too-tight",
+        "text": "ATR < 5 bps of price. The stop would be inside the spread. Refuse."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": null,
+    "lastClose": 63786.3
+  },
+  {
+    "ts": "2026-06-21T21:08:26.122Z",
+    "cycle": 37,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 46.26,
+      "atr14": 1.1507,
+      "change24h": -0.66
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5209327986015029,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.24%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 46. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.7548379825978058,
+        "line": "Order book -34% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 46 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.419,
+    "confidence": 0.619,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1721.411,
+      "tp1": 1716.578,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1719.8,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 42,
+      "ledger_jsonl_before": 49,
+      "ledger_jsonl_after": 50,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:08:26.122Z",
+    "cycle": 37,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 21.28,
+      "atr14": 0.0629,
+      "change24h": 1.69
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5742185089192015,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.41%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 21. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.82,
+        "line": "Order book 51% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 21 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.049,
+    "confidence": 0.619,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.28
+  },
+  {
+    "ts": "2026-06-21T21:08:56.169Z",
+    "cycle": 38,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 34.09,
+      "atr14": 29.6293,
+      "change24h": -0.29
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5055205635137041,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.19%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 34. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -63% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 34 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.429,
+    "confidence": 0.629,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [
+      {
+        "code": "Stop-too-tight",
+        "text": "ATR < 5 bps of price. The stop would be inside the spread. Refuse."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 63793.891,
+      "tp1": 63669.448,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63752.41
+  },
+  {
+    "ts": "2026-06-21T21:08:56.169Z",
+    "cycle": 38,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 40.57,
+      "atr14": 1.2264,
+      "change24h": -0.76
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5223679129712471,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.24%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 41. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.6870428857593378,
+        "line": "Order book -23% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 41 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.406,
+    "confidence": 0.606,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1720.197,
+      "tp1": 1715.046,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1718.48,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 43,
+      "ledger_jsonl_before": 54,
+      "ledger_jsonl_after": 55,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:08:56.169Z",
+    "cycle": 38,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 17.54,
+      "atr14": 0.0686,
+      "change24h": 1.54
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5767644344430645,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.42%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 18. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.8011936959390737,
+        "line": "Order book 42% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 18 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.045,
+    "confidence": 0.616,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.18
+  },
+  {
+    "ts": "2026-06-21T21:09:26.216Z",
+    "cycle": 39,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 27.66,
+      "atr14": 34.3636,
+      "change24h": -0.42
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5083064934541278,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.19%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 28. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Order book -70% ask-heavy. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 28 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.43,
+    "confidence": 0.63,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63732.809,
+      "tp1": 63588.482,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63684.7,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 44,
+      "ledger_jsonl_before": 85,
+      "ledger_jsonl_after": 86,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:09:26.216Z",
+    "cycle": 39,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 25.67,
+      "atr14": 1.6329,
+      "change24h": -1.12
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.529496137792431,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.26%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 26. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Last bar: net selling. Volume 591% of average. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 26 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.434,
+    "confidence": 0.634,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 1715.676,
+      "tp1": 1708.818,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1713.39,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 45,
+      "ledger_jsonl_before": 86,
+      "ledger_jsonl_after": 87,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:09:26.216Z",
+    "cycle": 39,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 15.15,
+      "atr14": 0.0764,
+      "change24h": 1.3
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5825373811897232,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.44%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 15. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": 1,
+        "conf": 0.8168573447675923,
+        "line": "Order book 44% bid-heavy. Long."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 15 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": 0.047,
+    "confidence": 0.62,
+    "direction": "PASS",
+    "leverage": 1,
+    "blocks": [],
+    "final": "PASS",
+    "risk": null,
+    "lastClose": 73.07
+  },
+  {
+    "ts": "2026-06-21T21:09:56.266Z",
+    "cycle": 40,
+    "symbol": "BTCUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 26.66,
+      "atr14": 35.9564,
+      "change24h": -0.42
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5086813564519956,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.20%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 27. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Last bar: net selling. Volume 311% of average. Short."
+      },
+      "Technical": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Trend down, RSI 27 in the live zone, momentum negative. Short. Risk-defined, manage at 2R."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.43,
+    "confidence": 0.63,
+    "direction": "SHORT",
+    "leverage": 2,
+    "blocks": [],
+    "final": "SHORT",
+    "risk": {
+      "stop": 63722.259,
+      "tp1": 63571.242,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 63671.92,
+    "execution": {
+      "attempted": true,
+      "api_ok": true,
+      "api_error": null,
+      "position_id": 46,
+      "ledger_jsonl_before": 88,
+      "ledger_jsonl_after": 89,
+      "ledger_jsonl_grew": true,
+      "trades_json_before": 37,
+      "trades_json_after": 37,
+      "trades_json_grew": false
+    }
+  },
+  {
+    "ts": "2026-06-21T21:09:56.266Z",
+    "cycle": 40,
+    "symbol": "ETHUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 23.67,
+      "atr14": 1.7079,
+      "change24h": -1.14
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5309318537746682,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.27%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 24. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.82,
+        "line": "Last bar: net selling. Volume 768% of average. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 24 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.27,
+    "confidence": 0.61,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 24 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 1714.461,
+      "tp1": 1707.288,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 1712.07
+  },
+  {
+    "ts": "2026-06-21T21:09:56.266Z",
+    "cycle": 40,
+    "symbol": "SOLUSDT",
+    "ok": true,
+    "indicators": {
+      "rsi14": 13.33,
+      "atr14": 0.0829,
+      "change24h": 1.25
+    },
+    "agents": {
+      "Macro": {
+        "dir": -1,
+        "conf": 0.5848298435220792,
+        "line": "Trend tape: EMA20 vs EMA60 spread -0.45%. I lean short, mildly."
+      },
+      "Sentiment": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Crowd is undecided. RSI 13. Pass, anxiously."
+      },
+      "News": {
+        "dir": 0,
+        "conf": 0.5,
+        "line": "Calendar clean, vol normal. I yield to the room."
+      },
+      "OnChain": {
+        "dir": -1,
+        "conf": 0.8001267925380985,
+        "line": "Last bar: net selling. Volume 250% of average. Short."
+      },
+      "Technical": {
+        "dir": 0,
+        "conf": 0.7,
+        "line": "RSI 13 oversold. No clean setup. Pass."
+      }
+    },
+    "weights": {
+      "Macro": 0.2,
+      "Sentiment": 0.15,
+      "News": 0.25,
+      "OnChain": 0.2,
+      "Technical": 0.2
+    },
+    "score": -0.277,
+    "confidence": 0.617,
+    "direction": "SHORT",
+    "leverage": 1,
+    "blocks": [
+      {
+        "code": "Capitulation-chase",
+        "text": "RSI 13 < 25 — chasing a flush is the same trap, inverted."
+      }
+    ],
+    "final": "BLOCKED · HABIT",
+    "risk": {
+      "stop": 73.096,
+      "tp1": 72.748,
+      "stop_atr": 1.4,
+      "tp_R": 2
+    },
+    "lastClose": 72.98
+  }
+]
