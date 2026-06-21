@@ -1,0 +1,6 @@
+node_modules/
+engine/__pycache__/
+data/paper_trades.jsonl
+data/paper_state.json
+*.log
+.env

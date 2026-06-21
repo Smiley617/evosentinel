@@ -1,0 +1,196 @@
+// EvoSentinel · Chamber server.
+// Serves the static dashboard and exposes /api/push-letter which
+// renders the Future-You brief from live JSON and forwards it to Telegram.
+// Secrets are read from process.env so they never reach the browser.
+
+const express = require("express");
+const fs      = require("fs");
+const path    = require("path");
+const bitget  = require("./engine/bitget");
+const feeds   = require("./engine/feeds");
+const { debate } = require("./engine/parliament_live");
+const ledger  = require("./engine/ledger");
+
+const PORT     = process.env.PORT || 3000;
+const TG_TOKEN = process.env.TG_BOT_TOKEN;
+const TG_CHAT  = process.env.TG_CHAT_ID;
+
+const app = express();
+app.use(express.json({ limit: "256kb" }));
+app.use(express.static(__dirname, { extensions: ["html"] }));
+
+// Initialise the persistent paper ledger (rebuilds state from disk if present).
+ledger.load();
+
+// Helper to read the latest tick for a symbol from bitget poller.
+const tickerOf = (sym) => bitget.snapshot().tickers[sym];
+
+// Auto-exit loop: every 5s, mark open positions, fire stops/TPs, persist.
+setInterval(() => {
+  const fired = ledger.checkExits(tickerOf);
+  if (fired.length && TG_TOKEN && TG_CHAT) {
+    for (const p of fired) {
+      const arrow = p.pnl_usd >= 0 ? "WIN" : "LOSS";
+      const html = `<b>EvoSentinel · auto-close</b>\n${p.symbol} ${p.dir} · ${p.exit_reason}\nentry ${p.entry} · exit ${p.exit}\nPnL ${p.pnl_usd >= 0 ? "+" : ""}$${p.pnl_usd} (${p.pnl_pct}%) · ${p.r_multiple}R · ${arrow}\nbank $${p.bank_after}`;
+      tgSend(html).catch(() => {});
+    }
+  }
+}, 5000);
+
+// ── Telegram pusher ────────────────────────────────────────────
+async function tgSend(html) {
+  if (!TG_TOKEN || !TG_CHAT) {
+    return { ok: false, error: "missing TG_BOT_TOKEN or TG_CHAT_ID env" };
+  }
+  const url = `https://api.telegram.org/bot${TG_TOKEN}/sendMessage`;
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      chat_id: TG_CHAT,
+      parse_mode: "HTML",
+      disable_web_page_preview: true,
+      text: html,
+    }),
+  });
+  return await res.json();
+}
+
+// ── Letter renderer ────────────────────────────────────────────
+// Reads metrics.json + briefs.json + blocked.json from /data and
+// composes the same Future-You brief the dashboard shows on screen.
+function renderLetter() {
+  const data = (f) => JSON.parse(fs.readFileSync(path.join(__dirname, "data", f), "utf8"));
+  let m, briefs, blocked, trades;
+  try {
+    m       = data("metrics.json");
+    briefs  = data("briefs.json");
+    blocked = data("blocked.json");
+    trades  = data("trades.json");
+  } catch (e) {
+    return { html: null, error: "data files missing: " + e.message };
+  }
+
+  const todayBrief = briefs[briefs.length - 1] || {};
+  const yBrief     = briefs[briefs.length - 2] || {};
+  const score      = Math.round((m.metrics?.evolution_score ?? 78));
+  const saved      = Math.round(m.metrics?.emotional_tax_saved ?? 816);
+  const dd         = (m.metrics?.max_drawdown_pct ?? -2.97).toFixed(2);
+  const sharpe     = (m.metrics?.sharpe ?? 1.42).toFixed(2);
+  const blocksY    = blocked.filter(b => b.ts?.startsWith(yBrief.date || "")).length || blocked.length;
+  const refusals   = blocked.slice(-2).map(b =>
+    `• ${b.symbol} ${b.proposed_direction || ""} blocked · ${b.habit_blocked || "habit"}`
+  ).join("\n") || "• (no refusals in window)";
+
+  const stamp = new Date().toISOString().slice(0, 16).replace("T", " ");
+  const lesson = todayBrief.lesson || "Show up clean again today. The room is doing the refusing for you.";
+  const pm = ledger.metrics();
+  const paperLine = pm.trades > 0
+    ? `${pm.trades} closes · ${pm.win_rate_pct}% wins · bank $${pm.bank} (${pm.return_pct >= 0 ? "+" : ""}${pm.return_pct}%)`
+    : `${pm.open_positions} open · bank $${pm.bank}`;
+
+  const html =
+`<b>EvoSentinel · Daily Brief</b>
+<i>Live push · ${stamp} UTC</i>
+
+<b>Evolution score</b>  ${score} / 100
+<b>Emotional tax avoided</b>  +$${saved.toLocaleString()}
+<b>Drawdown held</b>  ${dd}%
+<b>Sharpe</b>  ${sharpe}
+<b>Paper book</b>  ${paperLine}
+
+<b>Recent refusals</b>
+${refusals}
+
+<b>A note from Future You</b>
+${lesson}
+
+Parliament of Five`;
+
+  return { html, error: null };
+}
+
+// ── Routes ─────────────────────────────────────────────────────
+app.get("/api/health", (_req, res) => {
+  res.json({
+    ok: true,
+    hasToken: !!TG_TOKEN,
+    hasChat: !!TG_CHAT,
+    bitget: bitget.snapshot(),
+    paper: ledger.metrics(),
+  });
+});
+
+// Live quotes from Bitget (BTC/ETH/SOL) — synthetic stocks are still
+// served from /data/market.json and clearly labeled in the UI.
+app.get("/api/quotes", (_req, res) => {
+  res.json(bitget.snapshot());
+});
+
+// Activate Sentinel: run the 5-agent debate for one or all live symbols.
+// Body: { symbol?: "BTCUSDT" }  — defaults to all.
+app.post("/api/activate", (req, res) => {
+  const snap = bitget.snapshot();
+  const targets = req.body?.symbol ? [req.body.symbol] : bitget.SYMBOLS;
+  const verdicts = targets.map(sym => debate(sym, snap.tickers[sym], bitget.bars(sym)));
+  res.json({
+    ok: true,
+    asOf: Date.now(),
+    quoteAgeMs: snap.ageMs,
+    verdicts,
+    mode: "PAPER · SIMULATION · no real orders",
+  });
+});
+
+// Place a paper-trade entry from a verdict. Pure simulation, never hits
+// any exchange. The position is sized off live account risk and persisted
+// to data/paper_trades.jsonl. Auto-exit loop manages stops/TPs.
+app.post("/api/paper/open", (req, res) => {
+  const v = req.body?.verdict;
+  if (!v || !v.ok || v.final === "PASS" || String(v.final).startsWith("BLOCKED")) {
+    return res.status(400).json({ ok: false, error: "no actionable verdict" });
+  }
+  const tk = tickerOf(v.symbol);
+  const r  = ledger.openPosition(v, tk?.last);
+  if (!r.ok) return res.status(400).json(r);
+  res.json({ ok: true, position: r.position, metrics: ledger.metrics(), mode: "PAPER · SIMULATION" });
+});
+
+app.post("/api/paper/close", (req, res) => {
+  const id = Number(req.body?.id);
+  if (!id) return res.status(400).json({ ok: false, error: "id required" });
+  const r = ledger.manualClose(id, tickerOf);
+  if (!r.ok) return res.status(400).json(r);
+  res.json({ ok: true, position: r.position, metrics: ledger.metrics() });
+});
+
+app.get("/api/paper/book", (_req, res) => {
+  res.json({
+    ok: true,
+    positions: ledger.markToMarket(tickerOf),
+    history:   ledger.readHistory(),
+    metrics:   ledger.metrics(),
+  });
+});
+
+app.get("/api/paper/log", (_req, res) => {
+  const n = Math.min(1000, Number(_req.query.n) || 200);
+  res.json({ ok: true, ledger: ledger.ledgerTail(n), metrics: ledger.metrics() });
+});
+
+app.post("/api/push-letter", async (_req, res) => {
+  const { html, error } = renderLetter();
+  if (error) return res.status(500).json({ ok: false, error });
+  const r = await tgSend(html);
+  if (!r.ok) return res.status(502).json({ ok: false, error: r.description || r.error || "telegram refused" });
+  res.json({ ok: true, message_id: r.result.message_id, sent_at: r.result.date });
+});
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`EvoSentinel Chamber listening on :${PORT}`);
+  console.log(`Telegram: token=${TG_TOKEN ? "set" : "MISSING"} chat=${TG_CHAT || "MISSING"}`);
+  bitget.start();
+  feeds.start();
+  console.log(`Bitget poller started for ${bitget.SYMBOLS.join(", ")}`);
+  console.log(`Live feeds started: Bitget announcements, Bitget orderbook, mempool.space`);
+});

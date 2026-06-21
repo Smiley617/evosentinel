@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>EvoSentinel · Five Voices. One Refusal to Lose.</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="EvoSentinel: a parliament of five specialist agents that debates every trade on Bitget. Bad-habit refusals fire automatically. The drawdown stops here." />
+
+<link rel="stylesheet" href="https://db.onlinewebfonts.com/c/04e6981992c0e2e7642af2074ebe3901?family=Helvetica+Now+Display+Bold" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink:     '#192837',
+          accent:  '#7342E2',
+          'accent-2': '#5a2dc4',
+          cream:   '#F2F2EE',
+          'cream-2': '#E7E3DA',
+          'cream-dim': '#CFC8C5',
+          rule:    '#1928371a'
+        },
+        fontFamily: {
+          heading: ['"Helvetica Now Display Bold"','Helvetica','Arial','sans-serif'],
+          body:    ['Inter','system-ui','sans-serif']
+        }
+      }
+    }
+  };
+</script>
+
+<style id="core">
+  :root{
+    --font-heading: 'Helvetica Now Display Bold', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --color-text: #192837;
+    --color-accent: #7342E2;
+    --color-login-bg: #F2F2EE;
+  }
+  html,body{margin:0;background:var(--color-login-bg);color:var(--color-text);font-family:var(--font-body);}
+  body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;}
+  .font-heading{font-family:var(--font-heading);letter-spacing:-0.01em;}
+
+  /* Hero typography per spec */
+  .hero-h{
+    font-family:var(--font-heading);
+    font-size:clamp(1.65rem,5vw,3rem);
+    line-height:1.05;
+    letter-spacing:-0.01em;
+    color:#192837;
+    margin-bottom:24px;
+  }
+  .hero-h .em{color:#7342E2;}
+  .hero-h .icon{
+    display:inline-block;vertical-align:middle;position:relative;top:-2px;
+    margin:0 .25em;color:#192837;
+  }
+  .hero-sub{
+    font-family:var(--font-body);
+    font-size:clamp(0.9rem,2.5vw,1.1rem);
+    line-height:1.65;opacity:.8;max-width:560px;
+  }
+  .cta{
+    background:#7342E2;color:#fff;border-radius:50px;padding:17px 24px;
+    font-family:var(--font-body);font-weight:600;
+    font-size:clamp(0.9rem,2vw,1rem);
+    box-shadow:0 4px 24px rgba(115,66,226,.28);
+    min-width:210px;display:inline-flex;align-items:center;justify-content:space-between;gap:32px;
+    transition:transform .25s ease, filter .25s ease;
+  }
+  .cta:hover{transform:scale(1.04);filter:brightness(1.1);}
+  .cta:active{transform:scale(.96);}
+
+  .nav-pill{border-radius:9999px;padding:.625rem 1.25rem;font-weight:500;font-size:.875rem;
+    transition:transform .2s ease, filter .2s ease;}
+  .nav-pill:hover{filter:brightness(1.05);}
+
+  /* Video tint to keep nav + heading legible without burying the loop */
+  .hero-scrim{position:absolute;inset:0;pointer-events:none;background:
+    linear-gradient(180deg,rgba(242,242,238,.55) 0%,rgba(242,242,238,.18) 28%,rgba(242,242,238,.04) 55%,rgba(242,242,238,.55) 100%),
+    linear-gradient(90deg,rgba(242,242,238,.78) 0%,rgba(242,242,238,.2) 50%,rgba(242,242,238,0) 100%);}
+
+  /* KPIs */
+  .kpi-val{font-family:var(--font-heading);font-size:clamp(2.4rem,4.2vw,3.8rem);line-height:.95;letter-spacing:-0.02em;color:#192837;}
+  .kpi-val .unit{font-family:var(--font-body);font-weight:500;font-size:.42em;color:#7342E2;margin-left:.2em;letter-spacing:0;}
+  .kpi-lbl{font-family:var(--font-body);font-weight:600;font-size:.72rem;letter-spacing:.18em;color:#7342E2;text-transform:uppercase;}
+  .kpi-sub{font-family:var(--font-body);font-size:.85rem;color:#1928379a;line-height:1.5;}
+
+  /* Generic section heading */
+  .sec-eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-body);font-weight:600;
+    font-size:.74rem;letter-spacing:.22em;color:#7342E2;text-transform:uppercase;
+    padding:7px 12px;border:1px solid #7342E233;background:#7342E20a;border-radius:999px;}
+  .sec-eyebrow .dot{width:6px;height:6px;border-radius:999px;background:#7342E2;box-shadow:0 0 0 4px #7342E218;}
+  .sec-h{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3.4rem);line-height:1.02;letter-spacing:-0.018em;color:#192837;}
+  .sec-h .em{color:#7342E2;}
+
+  /* Agent cards (5 voices) */
+  .agent-card{background:#fff;border:1px solid #19283714;border-radius:22px;padding:28px 26px;
+    transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease, border-color .25s;}
+  .agent-card:hover{transform:translateY(-6px);box-shadow:0 18px 50px -22px rgba(25,40,55,.22);border-color:#7342E240;}
+  .agent-icon{width:46px;height:46px;border-radius:14px;background:#7342E211;color:#7342E2;
+    display:flex;align-items:center;justify-content:center;}
+  .agent-name{font-family:var(--font-heading);font-size:1.6rem;line-height:1;letter-spacing:-0.015em;color:#192837;}
+  .agent-quote{font-family:var(--font-body);font-style:italic;font-size:.95rem;line-height:1.45;color:#192837cc;}
+
+  /* Habit blocker */
+  .blocker-feature{background:linear-gradient(180deg,#7342E2 0%,#5a2dc4 100%);color:#fff;border-radius:28px;padding:46px 40px;position:relative;overflow:hidden;}
+  .blocker-feature::before{content:"";position:absolute;inset:-20% -20% auto auto;width:340px;height:340px;background:radial-gradient(closest-side,rgba(255,255,255,.18),transparent 70%);}
+  .blocker-big{font-family:var(--font-heading);font-size:clamp(4rem,8vw,7.4rem);line-height:.85;letter-spacing:-0.035em;}
+  .habit-chip{background:#fff;border:1px solid #19283714;border-radius:18px;padding:18px 22px;
+    display:grid;grid-template-columns:54px 1fr auto;gap:16px;align-items:center;
+    transition:border-color .25s, transform .25s;}
+  .habit-chip:hover{border-color:#7342E240;transform:translateX(4px);}
+  .habit-code{font-family:var(--font-body);font-weight:700;font-size:.75rem;color:#7342E2;letter-spacing:.16em;text-transform:uppercase;}
+  .habit-name{font-family:var(--font-heading);font-size:1.1rem;line-height:1.05;letter-spacing:-0.01em;color:#192837;}
+  .habit-desc{font-family:var(--font-body);font-size:.84rem;color:#19283790;margin-top:3px;line-height:1.5;}
+  .habit-ct{font-family:var(--font-body);font-weight:600;font-size:.72rem;color:#7342E2;letter-spacing:.12em;text-transform:uppercase;text-align:right;}
+
+  /* CTA band */
+  .cta-band{background:#192837;color:#fff;border-radius:32px;padding:clamp(48px,7vw,90px) clamp(28px,6vw,72px);position:relative;overflow:hidden;}
+  .cta-band::before{content:"";position:absolute;inset:-50% -10% auto auto;width:520px;height:520px;background:radial-gradient(closest-side,rgba(115,66,226,.55),transparent 70%);filter:blur(20px);}
+  .cta-h{font-family:var(--font-heading);font-size:clamp(2.2rem,5vw,4.2rem);line-height:1;letter-spacing:-0.025em;}
+  .cta-h .em{color:#b69bff;}
+
+  /* Scrollbar + niceties */
+  ::-webkit-scrollbar{width:10px;height:10px;}
+  ::-webkit-scrollbar-track{background:#E7E3DA;}
+  ::-webkit-scrollbar-thumb{background:#192837;border-radius:6px;}
+  ::-webkit-scrollbar-thumb:hover{background:#7342E2;}
+
+  /* Sheet (mobile menu): defined here so framer-motion controls only x/opacity */
+  .sheet{position:fixed;right:0;top:0;height:100dvh;width:min(88vw,360px);
+    background:#CFC8C5;box-shadow:-12px 0 48px rgba(25,40,55,.18);z-index:60;
+    display:flex;flex-direction:column;padding:24px;}
+  .sheet-back{position:fixed;inset:0;background:rgba(25,40,55,.35);backdrop-filter:blur(4px);z-index:55;}
+
+  /* Reveal helpers when JS animation isn't ready */
+  [data-anim] { opacity: 0; transform: translateY(28px); }
+</style>
+
+<script type="importmap">
+{
+  "imports": {
+    "react":              "https://esm.sh/react@18.3.1",
+    "react/jsx-runtime":  "https://esm.sh/react@18.3.1/jsx-runtime",
+    "react-dom/client":   "https://esm.sh/react-dom@18.3.1/client",
+    "framer-motion":      "https://esm.sh/framer-motion@11.11.17?deps=react@18.3.1,react-dom@18.3.1",
+    "lucide-react":       "https://esm.sh/lucide-react@0.469.0?deps=react@18.3.1,react-dom@18.3.1",
+    "htm":                "https://esm.sh/htm@3.1.1"
+  }
+}
+</script>
+</head>
+<body class="bg-cream text-ink font-body antialiased selection:bg-accent selection:text-white">
+<div id="root"></div>
+<script type="module" id="app">
+import React, { useState } from "react";
+import { createRoot } from "react-dom/client";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  ArrowRightCircle, Zap, LockKeyhole, Fingerprint, Menu, X,
+  Globe2, Users2, Newspaper, Activity, LineChart,
+  ShieldOff, Ban, AlarmClock, History
+} from "lucide-react";
+import htm from "htm";
+const html = htm.bind(React.createElement);
+
+/* ---------------- Static EvoSentinel content ---------------- */
+const VIDEO_SRC = "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260518_003132_8b7edcb6-c64d-4a52-a9ca-879942e122ad.mp4";
+
+const NAV = ["Parliament", "Refusals", "Ledger", "Brief", "Log"];
+
+const KPIS = [
+  { l:"Evolution Score", v:"68.3", u:"/100", s:"Tier · Sentinel · next Ghost @ 85" },
+  { l:"Capital Saved",   v:"$816", u:"",     s:"4 habit-blocks · prior-year basis" },
+  { l:"Max Drawdown",    v:"−2.97", u:"%",   s:"Baseline −64.65% · 95% reduction" },
+  { l:"Sharpe Ratio",    v:"3.06", u:"σ",    s:"Baseline −7.15 · lift +10.21" },
+  { l:"Win Rate",        v:"56.8", u:"%",    s:"Avg +0.67R · expectancy $75.28" },
+  { l:"Final Equity",    v:"$12.8", u:"k",   s:"Baseline $3,537 · same $10k start" }
+];
+
+const AGENTS = [
+  { key:"Macro",     role:"The Economist",     wt:"20%", Icon: Globe2,
+    quote:"I remain unconvinced. I have correctly predicted six of the last two recessions.",
+    blurb:"Dry. Skeptical. Reads regime from QQQ trend and recent macro surprises." },
+  { key:"Sentiment", role:"The Crowd Reader",  wt:"15%", Icon: Users2,
+    quote:"Everyone is calm. That is the part that scares me.",
+    blurb:"Anxious. Fades euphoria, fades capitulation, never trusts quiet rooms." },
+  { key:"News",      role:"The Reporter",      wt:"20%", Icon: Newspaper,
+    quote:"BREAKING, the CALENDAR said fourteen-thirty GMT, PEOPLE!",
+    blurb:"Excitable. Lives in the event calendar. Vetoes the room before earnings prints." },
+  { key:"OnChain",   role:"The Whale Watcher", wt:"20%", Icon: Activity,
+    quote:"Flow +63%. I refuse to write a sentence around the number.",
+    blurb:"Cold. Telegraphic. Reports volume, flow, and direction. Holds no opinions." },
+  { key:"Technical", role:"The Chartist",      wt:"25%", Icon: LineChart,
+    quote:"The chart already said it. I am translating.",
+    blurb:"Confident. Brief. Speaks last. Reads the verdict and hands off to the risk desk." }
+];
+
+const HABITS = [
+  { code:"H-01", Icon: ShieldOff,  name:"Revenge trade",
+    desc:"Two losses on the same symbol within four hours. Entry refused on the third.", ct:"22% prior" },
+  { code:"H-02", Icon: Ban,        name:"FOMO at the top",
+    desc:"Long with RSI > 75 and price > 2σ above the 20-bar mean.", ct:"18% prior" },
+  { code:"H-03", Icon: AlarmClock, name:"No-stop / pre-event",
+    desc:"Entered inside the 30-minute window before a known earnings or macro print.", ct:"15% prior" },
+  { code:"H-04", Icon: History,    name:"Held loser",
+    desc:"Position carried past the stop level on the false hope of a recovery.", ct:"13% prior" }
+];
+
+/* ---------------- Logo ---------------- */
+const Logo = ({ size=32 }) => html`
+  <svg xmlns="http://www.w3.org/2000/svg" width=${size} height=${size} fill="none" overflow="visible" viewBox="0 0 256 256" aria-hidden="true">
+    <path d="M 64 128 L 64.5 128 L 32 95 L 0 64 L 0 0 L 64 0 L 128 64 L 128 64.5 L 161 32 L 192 0 L 256 0 L 256 64 L 192 128 L 128 128 L 128 192 L 96 223 L 63.5 256 L 0 256 L 0 192 Z M 256 192 L 224 223 L 191.5 256 L 128 256 L 128 192 L 192 128 L 256 128 Z" fill="#192837"/>
+  </svg>`;
+
+/* ---------------- Motion variants ---------------- */
+const fadeUp = {
+  hidden: { opacity: 0, y: 28 },
+  visible: (i = 0) => ({
+    opacity: 1, y: 0,
+    transition: { delay: i * 0.15, duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+  })
+};
+
+const sheetVariants = {
+  hidden: { x: "100%" },
+  visible: { x: 0, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] } },
+  exit:    { x: "100%", transition: { duration: 0.35, ease: [0.22, 1, 0.36, 1] } }
+};
+
+/* ---------------- Navbar ---------------- */
+function Navbar({ onMenu }) {
+  return html`
+    <nav class="relative z-10 w-full">
+      <div class="mx-auto max-w-[1280px] px-5 sm:px-8 py-4 sm:py-5 flex items-center justify-between">
+        <a href="#top" class="flex items-center gap-2.5">
+          <${Logo} size=${32} />
+          <span class="font-heading text-[1.05rem] tracking-tight text-ink">EvoSentinel</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          ${NAV.map(n => html`
+            <a key=${n} href=${"#"+n.toLowerCase()}
+               class="text-sm font-medium text-ink/80 hover:opacity-100 hover:text-ink transition-opacity">${n}</a>`)}
+        </div>
+        <div class="hidden md:flex items-center gap-2.5">
+          <a href="#cta"
+             class="nav-pill text-white"
+             style=${{ background: "#7342E2" }}>Activate Sentinel</a>
+          <a href="dashboard.html"
+             class="nav-pill text-ink"
+             style=${{ background: "#F2F2EE" }}>Chamber Log</a>
+        </div>
+        <button class="md:hidden p-2 -mr-2 text-ink" onClick=${onMenu} aria-label="Open menu">
+          <${Menu} size=${24} />
+        </button>
+      </div>
+    </nav>`;
+}
+
+/* ---------------- Mobile Sheet ---------------- */
+function Sheet({ open, onClose }) {
+  return html`
+    <${AnimatePresence}>
+      ${open && html`
+        <${React.Fragment}>
+          <${motion.div} key="back" class="sheet-back"
+            initial=${{ opacity: 0 }} animate=${{ opacity: 1 }} exit=${{ opacity: 0 }}
+            transition=${{ duration: 0.3 }} onClick=${onClose} />
+          <${motion.aside} key="sheet" class="sheet font-body"
+            variants=${sheetVariants} initial="hidden" animate="visible" exit="exit">
+            <div class="flex items-center justify-between mb-6">
+              <div class="flex items-center gap-2.5">
+                <${Logo} size=${28} />
+                <span class="font-heading text-base text-ink">EvoSentinel</span>
+              </div>
+              <button onClick=${onClose} aria-label="Close menu" class="p-2 -mr-2 text-ink">
+                <${X} size=${22} />
+              </button>
+            </div>
+            <div class="h-px bg-ink/15 -mx-6 mb-6"></div>
+            <nav class="flex-1 flex flex-col gap-1">
+              ${NAV.map((n, i) => html`
+                <${motion.a} key=${n} href=${"#"+n.toLowerCase()} onClick=${onClose}
+                  class="font-heading text-2xl text-ink py-2"
+                  initial=${{ opacity: 0, x: 20 }}
+                  animate=${{ opacity: 1, x: 0 }}
+                  transition=${{ delay: 0.18 + i * 0.07, duration: 0.4, ease: [0.22, 1, 0.36, 1] }}>${n}</${motion.a}>`)}
+            </nav>
+            <div class="flex flex-col gap-3 pt-6">
+              <a href="#cta" onClick=${onClose} class="nav-pill text-white text-center"
+                 style=${{ background: "#7342E2" }}>Activate Sentinel</a>
+              <a href="dashboard.html" onClick=${onClose} class="nav-pill text-ink text-center"
+                 style=${{ background: "#F2F2EE" }}>Chamber Log</a>
+            </div>
+          </${motion.aside}>
+        </${React.Fragment}>`}
+    </${AnimatePresence}>`;
+}
+
+/* ---------------- Hero ---------------- */
+function Hero() {
+  return html`
+    <section id="top" class="relative w-full min-h-screen overflow-hidden">
+      <video class="absolute inset-0 w-full h-full object-cover"
+             autoPlay muted loop playsInline preload="auto"
+             poster="" src=${VIDEO_SRC}></video>
+      <div class="hero-scrim"></div>
+
+      <div class="relative z-10">
+        <${Navbar} onMenu=${() => document.dispatchEvent(new Event("open-menu"))} />
+
+        <div class="mx-auto max-w-[1280px] px-5 sm:px-8" style=${{ paddingTop: "clamp(40px, 8vw, 72px)" }}>
+          <div style=${{ maxWidth: "560px" }}>
+            <${motion.h1} class="hero-h font-heading"
+              variants=${fadeUp} initial="hidden" animate="visible" custom=${0}>
+              <${Zap} class="icon" size=${24} strokeWidth=${2.25} /> Five
+              Voices.${' '}
+              <${LockKeyhole} class="icon" size=${24} strokeWidth=${2.25} /> One${' '}
+              <span class="em">Refusal</span> to Lose.${' '}
+              <${Fingerprint} class="icon" size=${24} strokeWidth=${2.25} />
+            </${motion.h1}>
+
+            <${motion.p} class="hero-sub"
+              variants=${fadeUp} initial="hidden" animate="visible" custom=${1}>
+              Five specialist agents debate every trade across Bitget crypto perps and Stocks 2.0.
+              Bad-habit refusals fire automatically. The drawdown stops here, held to <b>−2.97%</b> across
+              ninety days, with <b>$816</b> saved by refusal.
+            </${motion.p}>
+
+            <${motion.div} class="mt-7"
+              variants=${fadeUp} initial="hidden" animate="visible" custom=${2}>
+              <a href="dashboard.html" class="cta">
+                <span>Enter the Chamber</span>
+                <${ArrowRightCircle} size=${20} />
+              </a>
+            </${motion.div}>
+          </div>
+        </div>
+      </div>
+    </section>`;
+}
+
+/* ---------------- §01 Metrics ---------------- */
+function Metrics() {
+  return html`
+    <section id="ledger" class="py-24 sm:py-32">
+      <div class="mx-auto max-w-[1280px] px-5 sm:px-8">
+        <${motion.div} initial=${{ opacity:0, y:24 }} whileInView=${{ opacity:1, y:0 }}
+          viewport=${{ once:true, margin:"-80px" }} transition=${{ duration:.6, ease:[0.22,1,0.36,1] }}
+          class="flex flex-col gap-4 mb-12 max-w-[680px]">
+          <span class="sec-eyebrow self-start"><span class="dot"></span>§01 · By the Numbers</span>
+          <h2 class="sec-h">Every figure recomputed from the <span class="em">on-disk trade log</span>.</h2>
+          <p class="hero-sub" style=${{maxWidth:"640px"}}>
+            Ninety days. Hourly bars. A decision every four hours.
+            Reproducible bit-for-bit with <code class="font-mono text-accent">python3 -m engine.run</code>.
+          </p>
+        </${motion.div}>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-ink/10 rounded-3xl overflow-hidden border border-ink/10">
+          ${KPIS.map((k, i) => html`
+            <${motion.div} key=${k.l}
+              initial=${{ opacity:0, y:24 }} whileInView=${{ opacity:1, y:0 }}
+              viewport=${{ once:true, margin:"-60px" }}
+              transition=${{ delay: i*0.06, duration:.55, ease:[0.22,1,0.36,1] }}
+              class="bg-cream p-7 sm:p-8 flex flex-col">
+              <div class="kpi-lbl mb-5">${k.l}</div>
+              <div class="kpi-val">${k.v}<span class="unit">${k.u}</span></div>
+              <div class="kpi-sub mt-4 pt-3 border-t border-ink/10">${k.s}</div>
+            </${motion.div}>`)}
+        </div>
+      </div>
+    </section>`;
+}
+
+/* ---------------- §02 Parliament ---------------- */
+function Parliament() {
+  return html`
+    <section id="parliament" class="py-24 sm:py-32 bg-cream-2/60">
+      <div class="mx-auto max-w-[1280px] px-5 sm:px-8">
+        <${motion.div} initial=${{ opacity:0, y:24 }} whileInView=${{ opacity:1, y:0 }}
+          viewport=${{ once:true, margin:"-80px" }} transition=${{ duration:.6, ease:[0.22,1,0.36,1] }}
+          class="flex flex-col gap-4 mb-14 max-w-[760px]">
+          <span class="sec-eyebrow self-start"><span class="dot"></span>§02 · The Parliament</span>
+          <h2 class="sec-h">Five voices. <span class="em">Distinct personalities.</span> One verdict per trade.</h2>
+          <p class="hero-sub" style=${{maxWidth:"640px"}}>
+            Macro hedges. Sentiment frets. News shouts. OnChain reports numbers. Technical closes.
+            Three-of-five alignment required to act; any confidence ≥ .85 against fires a hard veto.
+          </p>
+        </${motion.div}>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+          ${AGENTS.map((a, i) => html`
+            <${motion.article} key=${a.key} class="agent-card"
+              initial=${{ opacity:0, y:28 }} whileInView=${{ opacity:1, y:0 }}
+              viewport=${{ once:true, margin:"-60px" }}
+              transition=${{ delay: i*0.08, duration:.55, ease:[0.22,1,0.36,1] }}>
+              <div class="flex items-center justify-between mb-5">
+                <div class="agent-icon"><${a.Icon} size=${22} strokeWidth=${1.9} /></div>
+                <span class="kpi-lbl">VOTE · ${a.wt}</span>
+              </div>
+              <div class="text-xs font-semibold uppercase tracking-widest text-ink/55 mb-1">${a.role}</div>
+              <h3 class="agent-name mb-4">${a.key}</h3>
+              <p class="agent-quote mb-4">“${a.quote}”</p>
+              <p class="text-sm leading-relaxed text-ink/65">${a.blurb}</p>
+            </${motion.article}>`)}
+        </div>
+      </div>
+    </section>`;
+}
+
+/* ---------------- §03 Habit Blocker ---------------- */
+function Blocker() {
+  return html`
+    <section id="refusals" class="py-24 sm:py-32">
+      <div class="mx-auto max-w-[1280px] px-5 sm:px-8">
+        <${motion.div} initial=${{ opacity:0, y:24 }} whileInView=${{ opacity:1, y:0 }}
+          viewport=${{ once:true, margin:"-80px" }} transition=${{ duration:.6, ease:[0.22,1,0.36,1] }}
+          class="flex flex-col gap-4 mb-14 max-w-[760px]">
+          <span class="sec-eyebrow self-start"><span class="dot"></span>§03 · The Habit-Blocker</span>
+          <h2 class="sec-h">Patterns mined from your prior log, <span class="em">refused in real time.</span></h2>
+        </${motion.div}>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start">
+          <${motion.div} class="blocker-feature"
+            initial=${{ opacity:0, y:24 }} whileInView=${{ opacity:1, y:0 }}
+            viewport=${{ once:true, margin:"-60px" }} transition=${{ duration:.6, ease:[0.22,1,0.36,1] }}>
+            <div class="relative z-10">
+              <div class="text-xs font-semibold uppercase tracking-[.22em] opacity-80 mb-3">Net effect · 90-day window</div>
+              <div class="blocker-big">$816</div>
+              <p class="text-white/85 mt-4 text-lg max-w-[420px] leading-snug">
+                in losses the Parliament was willing to take, and the risk desk refused on behavioural grounds.
+              </p>
+              <div class="grid grid-cols-2 gap-6 mt-8 pt-6 border-t border-white/20">
+                <div>
+                  <div class="text-xs uppercase tracking-[.22em] opacity-70">Interventions</div>
+                  <div class="font-heading text-2xl mt-1">4 blocks</div>
+                </div>
+                <div>
+                  <div class="text-xs uppercase tracking-[.22em] opacity-70">Override rate</div>
+                  <div class="font-heading text-2xl mt-1">0%</div>
+                </div>
+                <div>
+                  <div class="text-xs uppercase tracking-[.22em] opacity-70">Prior 9-Mo Cost</div>
+                  <div class="font-heading text-2xl mt-1">$3,420</div>
+                </div>
+                <div>
+                  <div class="text-xs uppercase tracking-[.22em] opacity-70">Avg $ / Block</div>
+                  <div class="font-heading text-2xl mt-1">$204</div>
+                </div>
+              </div>
+            </div>
+          </${motion.div}>
+
+          <div class="flex flex-col gap-4">
+            ${HABITS.map((h, i) => html`
+              <${motion.div} key=${h.code} class="habit-chip"
+                initial=${{ opacity:0, x:24 }} whileInView=${{ opacity:1, x:0 }}
+                viewport=${{ once:true, margin:"-40px" }}
+                transition=${{ delay: i*0.08, duration:.5, ease:[0.22,1,0.36,1] }}>
+                <div class="w-12 h-12 rounded-2xl flex items-center justify-center"
+                     style=${{ background:"#7342E211", color:"#7342E2" }}>
+                  <${h.Icon} size=${20} strokeWidth=${1.9} />
+                </div>
+                <div>
+                  <div class="habit-code">${h.code}</div>
+                  <div class="habit-name mt-1">${h.name}</div>
+                  <div class="habit-desc">${h.desc}</div>
+                </div>
+                <div class="habit-ct">${h.ct}</div>
+              </${motion.div}>`)}
+          </div>
+        </div>
+      </div>
+    </section>`;
+}
+
+/* ---------------- CTA + Footer ---------------- */
+function CTA() {
+  return html`
+    <section id="cta" class="py-20">
+      <div class="mx-auto max-w-[1280px] px-5 sm:px-8">
+        <${motion.div} class="cta-band"
+          initial=${{ opacity:0, y:24 }} whileInView=${{ opacity:1, y:0 }}
+          viewport=${{ once:true, margin:"-80px" }} transition=${{ duration:.6, ease:[0.22,1,0.36,1] }}>
+          <div class="relative z-10 max-w-[760px]">
+            <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[.22em] text-white/70 mb-5">
+              <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+              Ready when you are
+            </span>
+            <h2 class="cta-h mb-6">The drawdown <span class="em">stops</span> here.</h2>
+            <p class="text-white/75 text-lg leading-relaxed max-w-[560px] mb-9">
+              Open the full Parliament Chamber: every transcript, every refusal, every $ avoided,
+              and the exact 9-month bad-habit history the blocker was trained on.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a href="dashboard.html" class="cta" style=${{ background:"#7342E2" }}>
+                <span>Enter the Chamber</span>
+                <${ArrowRightCircle} size=${20} />
+              </a>
+              <a href="#parliament" class="cta" style=${{ background:"#ffffff", color:"#192837", boxShadow:"none" }}>
+                <span>Re-read the Voices</span>
+                <${ArrowRightCircle} size=${20} />
+              </a>
+            </div>
+          </div>
+        </${motion.div}>
+      </div>
+    </section>
+    <footer class="py-10 text-center text-xs uppercase tracking-[.22em] text-ink/50">
+      EvoSentinel · Parliament Chamber · synthetic 90-day backtest · numbers reproduced from on-disk trade log
+    </footer>`;
+}
+
+/* ---------------- App root ---------------- */
+function App() {
+  const [open, setOpen] = useState(false);
+  React.useEffect(() => {
+    const h = () => setOpen(true);
+    document.addEventListener("open-menu", h);
+    return () => document.removeEventListener("open-menu", h);
+  }, []);
+  return html`
+    <${React.Fragment}>
+      <${Hero} />
+      <${Metrics} />
+      <${Parliament} />
+      <${Blocker} />
+      <${CTA} />
+      <${Sheet} open=${open} onClose=${() => setOpen(false)} />
+    </${React.Fragment}>`;
+}
+
+createRoot(document.getElementById("root")).render(html`<${App} />`);
+</script>
+</body>
+</html>

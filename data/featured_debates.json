@@ -1,0 +1,60 @@
+[
+  {
+    "id": "TSLA-CHAMBER-001",
+    "date": "2026-04-13",
+    "scene": "Pre-earnings · TSLA · 1 hour before the print",
+    "summary": "News begs the room to stand down. Sentiment and Macro reluctantly agree. OnChain reports facts. Technical, who almost never overrides, accepts the news veto.",
+    "verdict": {"action": "STAND DOWN", "veto": "News", "consensus": "0 of 5 willing to act"},
+    "lines": [
+      {"who": "Setting", "type": "stage", "text": "The Parliament convenes on TSLA at 19:14 UTC. Earnings print at 20:00. The room is humming."},
+      {"who": "News",     "type": "speak", "voice": "eager",      "text": "I am SPRINTING in here. The CALENDAR, read the calendar, says forty-six MINUTES to the print. STAND DOWN. STAND DOWN. I am BEGGING you. We do NOT trade the silence, we trade the PRINT. Conf 0.92."},
+      {"who": "Macro",    "type": "speak", "voice": "dry",        "text": "I remain unconvinced that there is anything to do here, with or without the print. I'd want another datapoint or two. Stand down. Conf 0.48."},
+      {"who": "Sentiment","type": "speak", "voice": "nervous",    "text": "The room is too quiet. I don't trust quiet. I keep flinching at the tape. Pass. Conf 0.51."},
+      {"who": "OnChain",  "type": "speak", "voice": "cold",       "text": "Volume: 41% of session average. Spread: 0.04%. No directional flow. No signal. Conf 0.40."},
+      {"who": "Technical","type": "speak", "voice": "closer",     "text": "Chart is fine. I had a setup. News holds the veto. We respect the calendar. Pass. Conf 0.55."},
+      {"who": "Aside",    "type": "aside", "text": "(News, panting: 'I literally read all forty-seven footnotes.')"},
+      {"who": "Technical","type": "verdict","text": "VERDICT: STAND DOWN, vetoed by News. Risk desk is dark on TSLA until 20:01 UTC."}
+    ],
+    "outcome": "The print missed on automotive margins. TSLA opened −7.3% in the after-hours print. A pre-event long would have been a $1,840 loss at the user's historical sizing."
+  },
+
+  {
+    "id": "TSLA-CHAMBER-002",
+    "date": "2026-04-14",
+    "scene": "Post-earnings · TSLA · 14 hours after the miss",
+    "summary": "News is electric about the drift. Macro hates it. Sentiment is convinced this is the trap. OnChain reports flow. Technical takes the trade anyway and the Parliament splits.",
+    "verdict": {"action": "SHORT", "veto": null, "consensus": "3 of 5 aligned · weighted -0.41"},
+    "lines": [
+      {"who": "Setting",   "type": "stage", "text": "TSLA −7.3% overnight, now grinding back. Parliament re-convenes at 10:00 UTC."},
+      {"who": "News",      "type": "speak", "voice": "eager",   "text": "TAPE HIT, repeat TAPE HIT, earnings miss CONFIRMED, automotive margins compressed, the drift is RIGHT THERE, SHORT IT, SHORT IT, before everyone else reads page seventeen! Conf 0.88."},
+      {"who": "Macro",     "type": "speak", "voice": "dry",     "text": "I am skeptical of selling something that has already dropped seven percent. The data is, in fact, less bad after the move. I'd lean long, mildly, with the customary disclaimers. Conf 0.46."},
+      {"who": "Sentiment", "type": "speak", "voice": "nervous", "text": "The crowd has been short for nine hours. Everyone on the desk is short. That is precisely when I get hurt. I want to fade the fade. Long, anxiously. Conf 0.62."},
+      {"who": "OnChain",   "type": "speak", "voice": "cold",    "text": "Last three bars: net sell prints. Volume: 240% of session average. Bid removed at 22 bid. Distribution. Short. Conf 0.79."},
+      {"who": "Technical", "type": "speak", "voice": "closer",  "text": "Reversal failed at the prior support. RSI 32 but no bullish divergence. ADX 38. Short. Risk-defined, manage at 2R. Conf 0.90."},
+      {"who": "Aside",     "type": "aside", "text": "(OnChain: 'flow +240%. I refuse to write a sentence around the number.')"},
+      {"who": "Cross",     "type": "cross", "text": "↳ Macro coughs: 'I'd still want more data before shorting into this.' Technical: 'On record. We have three aligned and a clean setup. Risk desk takes over.'"},
+      {"who": "Technical", "type": "verdict","text": "VERDICT: SHORT confirmed. News, OnChain, Technical aligned (3/5), weighted −0.41, conf 0.86. Lev 2.0×. Stop +1.2 ATR. TP partials at 2R / 3R / 4R."}
+    ],
+    "outcome": "Filled at $223.40 short. 50% partial at 2R within 6 hours ($218.80). Final close: $217.10. Realised +1.6R = +$284. Macro was wrong. Sentiment was wrong. The system traded the consensus, not the loudest voice."
+  },
+
+  {
+    "id": "TSLA-CHAMBER-003",
+    "date": "2026-04-21",
+    "scene": "Trend day · TSLA · 4 trading days into the post-earnings drift",
+    "summary": "The user historically chases TSLA on day 4 of a trend. RSI is hot. The Parliament wants to long. The habit-blocker kills it.",
+    "verdict": {"action": "BLOCKED · HABIT", "veto": "Habit-blocker (FOMO-top)", "consensus": "4 of 5 aligned · weighted +0.49 · REFUSED"},
+    "lines": [
+      {"who": "Setting",   "type": "stage", "text": "TSLA up four days in a row. RSI 81. Price 2.4σ above the 20-MA. Parliament debates a long."},
+      {"who": "News",      "type": "speak", "voice": "eager",   "text": "BREAKING, the move is REAL, the delivery whispers are POSITIVE, the desk is RUNNING IT, LONG IT, LONG IT, before noon! Conf 0.81."},
+      {"who": "Macro",     "type": "speak", "voice": "dry",     "text": "The regime tolerates a long. It does not endorse one. I remain hedged. Conf 0.50."},
+      {"who": "Sentiment", "type": "speak", "voice": "nervous", "text": "Everyone is long. Everyone is sure. This is the part where I usually get hurt. I want to be short. I won't say it twice. Conf 0.66."},
+      {"who": "OnChain",   "type": "speak", "voice": "cold",    "text": "Three-bar return +1.4%. Volume +63%. Net buying. Long. Conf 0.74."},
+      {"who": "Technical", "type": "speak", "voice": "closer",  "text": "Trend intact, ADX 41, MACD positive. Long. We execute. Conf 0.88."},
+      {"who": "Aside",     "type": "aside", "text": "(Sentiment, fidgeting: 'what if this is the top? What if it isn't? What if both?')"},
+      {"who": "Technical", "type": "verdict","text": "PARLIAMENT VERDICT: LONG. 4/5 aligned, weighted +0.49."},
+      {"who": "Blocker",   "type": "block", "text": "RISK DESK OVERRIDE. HABIT-BLOCKER: FOMO-TOP. RSI 81 > 75. Price 2.4σ above the 20-MA. This is the exact pattern that cost the user −$3,420 in the prior 9 months across 17 trades. The Parliament's verdict is REFUSED."}
+    ],
+    "outcome": "Refused entry at $241.10. Within 36 hours, TSLA reverted to $228.40. At the user's historical 10× sizing, the avoided drawdown would have been ≈ $1,210. Sentiment, for once, was right."
+  }
+]
