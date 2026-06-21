@@ -10,6 +10,8 @@ const bitget  = require("./engine/bitget");
 const feeds   = require("./engine/feeds");
 const { debate } = require("./engine/parliament_live");
 const ledger  = require("./engine/ledger");
+const trade   = require("./engine/bitget_trade");
+const skills  = require("./engine/bitget_skills");
 
 const PORT     = process.env.PORT || 3000;
 const TG_TOKEN = process.env.TG_BOT_TOKEN;
@@ -156,6 +158,43 @@ app.post("/api/paper/open", (req, res) => {
   res.json({ ok: true, position: r.position, metrics: ledger.metrics(), mode: "PAPER · SIMULATION" });
 });
 
+// ── Bitget Agent Hub bridge ────────────────────────────────────
+// EXEC_MODE=paper (default) → ledger.openPosition (no exchange call)
+// EXEC_MODE=live  → trade.placeSpotOrder (signed Bitget v2 spot order).
+//   With BITGET_TRADE_ARMED=0 the order is signed + logged but not sent
+//   (shadow mode). With BITGET_TRADE_ARMED=1 it hits Bitget for real.
+// Always mirrors to the paper ledger so the audit trail remains intact.
+app.get("/api/exec/status", (_req, res) => res.json({ ok: true, ...trade.status() }));
+
+app.post("/api/exec/place", async (req, res) => {
+  const v = req.body?.verdict;
+  if (!v || !v.ok || v.final === "PASS" || String(v.final).startsWith("BLOCKED")) {
+    return res.status(400).json({ ok: false, error: "no actionable verdict" });
+  }
+  const tk = tickerOf(v.symbol);
+  const paper = ledger.openPosition(v, tk?.last);            // always mirror
+  let live = null;
+  if (process.env.EXEC_MODE === "live") {
+    try { live = await trade.placeSpotOrder({ ...v, qty: trade.estimateQty(v) }); }
+    catch (e) { live = { ok: false, error: e.message }; }
+  }
+  res.json({ ok: true, exec_mode: process.env.EXEC_MODE || "paper",
+             paper: paper, live, status: trade.status() });
+});
+
+// Bitget Skill Hub-compatible per-voice endpoints. Lets judges hit any
+// single analyst module (macro / market-intel / news-briefing / sentiment /
+// technical-analysis) the same way they would hit Bitget's Agent Hub.
+app.get("/api/skill/:name/:symbol", (req, res) => {
+  const map = { macro: skills.macro, "market-intel": skills.marketIntel,
+                "news-briefing": skills.newsBriefing,
+                "sentiment-analyst": skills.sentimentAnalyst,
+                "technical-analysis": skills.technicalAnalysis };
+  const fn = map[req.params.name];
+  if (!fn) return res.status(404).json({ ok: false, error: "unknown skill" });
+  res.json(fn(req.params.symbol));
+});
+
 app.post("/api/paper/close", (req, res) => {
   const id = Number(req.body?.id);
   if (!id) return res.status(400).json({ ok: false, error: "id required" });
@@ -189,6 +228,8 @@ app.post("/api/push-letter", async (_req, res) => {
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`EvoSentinel Chamber listening on :${PORT}`);
   console.log(`Telegram: token=${TG_TOKEN ? "set" : "MISSING"} chat=${TG_CHAT || "MISSING"}`);
+  const ts = trade.status();
+  console.log(`Exec mode: ${ts.exec_mode} (keys=${ts.has_keys ? "set" : "absent"}, armed=${ts.armed}, sub=${ts.sub_account})`);
   bitget.start();
   feeds.start();
   console.log(`Bitget poller started for ${bitget.SYMBOLS.join(", ")}`);

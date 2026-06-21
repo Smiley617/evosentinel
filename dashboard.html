@@ -464,10 +464,22 @@
 
   /* nav live ticker */
   .nav-ticker{display:none;align-items:center;gap:12px;margin-right:10px;font-family:var(--font-body);font-size:12px;color:#19283799;font-variant-numeric:tabular-nums;}
-  .nav-ticker .nt{display:inline-flex;align-items:baseline;gap:5px;}
+  .nav-ticker .nt{display:inline-flex;align-items:baseline;gap:5px;white-space:nowrap;}
   .nav-ticker .nt b{color:var(--color-text);font-weight:700;}
   .nav-ticker .nt.up b{color:#1f8a5a;} .nav-ticker .nt.dn b{color:#c4453b;}
   @media (min-width:900px){ .nav-ticker{display:inline-flex;} }
+
+  /* navbar overflow fix — keep all flex children (incl. BTC/ETH/SOL tickers)
+     inside the rounded shell. Allow wrap so tickers drop to a second row
+     inside the same background instead of spilling below it. */
+  .nav-shell{flex-wrap:wrap;row-gap:8px;border-radius:28px !important;}
+  /* The right-hand flex group (ticker + Back-to-site + Open Chamber) must
+     keep its intrinsic width; otherwise flexbox shrinks the container but
+     its nowrap text spills outside the pill's painted box. */
+  .nav-shell > div:last-child{flex-wrap:wrap;row-gap:8px;justify-content:flex-end;flex-shrink:0;min-width:0;max-width:100%;margin-left:auto;}
+  /* Ticker block: never shrink, wrap chips internally if extremely narrow. */
+  .nav-ticker{flex-wrap:wrap;row-gap:6px;flex-shrink:0;min-width:0;max-width:100%;}
+  .nav-ticker .nt{flex-shrink:0;}
 </style>
 </head>
 <body class="bg-cream text-ink font-body">
@@ -495,6 +507,10 @@
       </nav>
       <div class="flex items-center gap-2">
         <div class="nav-ticker" id="nav-ticker"></div>
+        <span id="exec-badge" title="EXEC_MODE wiring · paper by default, live when EXEC_MODE=live + BITGET_TRADE_ARMED=1"
+              style="display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono),monospace;font-size:11px;padding:4px 9px;border-radius:9999px;background:#19283708;color:#192837aa;border:1px solid #19283714;white-space:nowrap;">
+          <span style="width:6px;height:6px;border-radius:9999px;background:#1f8a5a;"></span>EXEC: paper
+        </span>
         <a href="index.html" class="hidden sm:inline-flex nav-pill text-sm text-ink-soft hover:text-ink">Back to site</a>
         <a href="#sec-archive" class="cta-pill">Open Chamber
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>

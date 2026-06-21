@@ -1083,6 +1083,17 @@ async function pollLive() {
       navParts.push(`<span class="nt ${cls}">${short} <b>$${px.toLocaleString(undefined,{maximumFractionDigits:2})}</b></span>`);
     });
     document.getElementById("nav-ticker").innerHTML = navParts.join("");
+    // Hydrate EXEC_MODE badge from /api/exec/status (paper by default).
+    fetch("/api/exec/status").then(r => r.ok ? r.json() : null).then(s => {
+      if (!s) return;
+      const el = document.getElementById("exec-badge");
+      if (!el) return;
+      const live = s.exec_mode === "live";
+      const armed = !!s.armed;
+      const color = !live ? "#1f8a5a" : (armed ? "#c4453b" : "#c89400");
+      const label = !live ? "EXEC: paper" : (armed ? "EXEC: LIVE · armed" : "EXEC: live · shadow");
+      el.innerHTML = `<span style="width:6px;height:6px;border-radius:9999px;background:${color};"></span>${label}`;
+    }).catch(()=>{});
   } catch (e) {
     document.getElementById("live-source").textContent = "offline · " + e.message;
   }
