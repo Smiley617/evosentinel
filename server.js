@@ -166,6 +166,55 @@ app.post("/api/paper/open", (req, res) => {
 // Always mirrors to the paper ledger so the audit trail remains intact.
 app.get("/api/exec/status", (_req, res) => res.json({ ok: true, ...trade.status() }));
 
+// Read-only Bitget auth diagnostic. Single GET, single signed call to
+// the spot account-assets endpoint. Returns Bitget's raw response
+// verbatim (including HTTP status and error text on failure) so we can
+// confirm the API key + HMAC-SHA256 signing are correct without
+// touching any trade endpoint. See engine/test_auth.js.
+app.get("/api/exec/test-auth", async (_req, res) => {
+  const { testAuth } = require("./engine/test_auth");
+  const result = await testAuth();
+  res.status(result.http_status && result.http_status >= 400 ? result.http_status : 200).json(result);
+});
+
+// DRY-RUN ONLY. Builds and HMAC-SHA256-signs a Bitget v2 spot place-order
+// payload for ~$4 of SOLUSDT market buy, then returns it for inspection.
+// NEVER makes any HTTP call to Bitget. No order is placed. No funds move.
+app.get("/api/exec/test-order-shadow", async (_req, res) => {
+  const { buildOrderShadow } = require("./engine/test_order_shadow");
+  const tk = tickerOf("SOLUSDT");
+  const result = await buildOrderShadow(tk?.last);
+  res.json(result);
+});
+
+// LIVE one-time test. THIS WILL SPEND REAL MONEY.
+// Only invoked when the operator manually hits the URL. Not called by any
+// scheduled job, monitor, or other endpoint. After the order returns, a
+// single Telegram summary is sent via the existing tgSend pipe.
+app.get("/api/exec/test-order-live", async (_req, res) => {
+  const { placeLiveTestOrder } = require("./engine/test_order_live");
+  const result = await placeLiveTestOrder();
+
+  // Fire-and-log Telegram summary — never block the response on it.
+  try {
+    const j = result.bitget_raw_json || {};
+    const orderId = j?.data?.orderId || j?.data?.clientOid || "(none)";
+    const status  = result.ok ? "SUCCESS" : "FAILED";
+    const errLine = result.ok
+      ? ""
+      : `\nerror: <code>${(j.msg || result.fetch_error || result.bitget_raw_text || "unknown").toString().slice(0, 240)}</code>`;
+    const html =
+`<b>EvoSentinel · LIVE test order</b>
+${status} · ${result.intent.symbol} ${result.intent.side} ${result.intent.order_type}
+size: ${result.intent.size_field} USDT
+http: ${result.http_status} · code: ${j.code || "n/a"}
+orderId: <code>${orderId}</code>${errLine}`;
+    await tgSend(html);
+  } catch (_e) { /* never let TG failure mask the order result */ }
+
+  res.status(result.http_status && result.http_status >= 400 ? result.http_status : 200).json(result);
+});
+
 app.post("/api/exec/place", async (req, res) => {
   const v = req.body?.verdict;
   if (!v || !v.ok || v.final === "PASS" || String(v.final).startsWith("BLOCKED")) {
